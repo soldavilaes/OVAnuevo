@@ -903,6 +903,17 @@ h1.panelContent img {
   margin: -26px  -555px;
 }
 
+#imagen11 {
+  margin: -58px  -499px;
+}
+
+#imagen12 {
+  margin: 127px  -37px;
+}
+#imagen13 {
+  margin: 200px  -517px;
+}
+
 
 .quote {
     text-align: center;
@@ -1935,7 +1946,7 @@ font-size: 17px;
 
 #esEjemplo1 span {
   font-style: normal;
-  margin: 15px 40px; 
+  margin: 8px 40px; 
    text-align: justify;
   letter-spacing: 1px;
   line-height: 1;
@@ -1961,6 +1972,48 @@ font-size: 17px;
   font-size: 20px;
   width: 710px;
  }
+
+#secuencia span {
+  font-style: normal;
+  margin: 75px 40px; 
+  letter-spacing: 1px;
+  line-height: 1;
+  color:#000000;
+  position: absolute;
+  left: 75px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  width: 410px;
+  text-align: center;
+
+ }
+
+ #secuencia1 span {
+  font-style: normal;
+  margin: 75px 40px; 
+  letter-spacing: 1px;
+  line-height: 1;
+  color:#000000;
+  position: absolute;
+  left: 75px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  width: 410px;
+  border: 0.4rem solid #414141;
+  border-radius: 0.7rem;
+  text-align: center;
+  box-shadow: 1px 1px orange,
+    2px 2px gold,
+    3px 3px orange,
+    4px 4px gold,
+    5px 5px orange,
+    6px 6px gold,
+    7px 7px orange,
+    8px 8px gold;
+  font-weight: bold;
+  background: white;
+ }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
