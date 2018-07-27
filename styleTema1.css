@@ -1776,33 +1776,36 @@ button{
 
 #window
 {
-width: 900px;
-height: 558px;
+
+width: 600px;
+height: 158px;
 background: rgba(0,0,0,.8);
 opacity: 15px;
 position: relative;
 text-align: center;
 border-radius: 10px;
 display: none;
+left: 150px;
 
 
 }
 
 #window p{
+
 font-family: 'Open Sans', sans-serif;
-font-size: 15px;
-line-height: 100px;
-font-family: 'Open Sans', sans-serif;
-padding: 10px 3px;
-font-size: 5px;
-line-height: 100px;
+font-style: normal;
+font-size: 12px;
+line-height: 1;
 background: #FFFF;
-left: 238px;
-top: 5px;
-width: 320px;
-height: 95px;
+left: 140px;
+top: 0px;
+width: 300px;
+height: 132px;
 text-indent: 5px;
 text-align: justify;
+margin: 15px 0 0;
+padding: 0 10px 15px;
+border-radius: 10px;
 
 }
 #close{
