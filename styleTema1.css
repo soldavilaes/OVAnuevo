@@ -919,7 +919,16 @@ h1.panelContent img {
 #imagen15 {
   margin: 100px  -547px;
 }
+#imagen16 {
+  margin: -26px  -555px;
+}
+#imagen17 {
+  margin: 67px  -493px;
+}
 
+#imagen18 {
+  margin: 179px  -273px;
+}
 
 .quote {
     text-align: center;
@@ -1967,7 +1976,7 @@ font-size: 17px;
 
 #esEjemplo2 span {
   font-style: normal;
-  margin: 15px 40px; 
+  margin: 8px 40px; 
    text-align: justify;
   letter-spacing: 1px;
   line-height: 1;
@@ -1978,6 +1987,20 @@ font-size: 17px;
   font-size: 20px;
   width: 720px;
  }
+#esEjemplo3 span {
+  font-style: normal;
+  margin: 218px 40px; 
+   text-align: justify;
+  letter-spacing: 1px;
+  line-height: 1;
+  color:#000000;
+  position: absolute;
+  left: -59px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  width: 120px;
+ }
+
 
 #secuencia span {
   font-style: normal;
