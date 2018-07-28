@@ -247,102 +247,124 @@ and open the template in the editor.
 									
 									<div class="modal-body modal-body-step-2">
 										<h1 class = "panelContent"><img id="imagen5" src="listaVacia.png"  /><h1>
-										<div class="description"><p id="lVacia"><span>Una lista vacía consiste en un elemento especial que no es un símbolo (un 	identificador) ni una pareja (estructura de datos conformada por dos campos cabeza y cola), pero sí una lista. 
+											<div class="description"><p id="lVacia"><span>Una lista vacía consiste en un elemento especial que no es un símbolo (un 	identificador) ni una pareja (estructura de datos conformada por dos campos cabeza y cola), pero sí una lista. 
 											</span></p>
-										<div class="oblicuo outline">
-											<div class="contenido">
-												Se trata de un objeto atómico que denota una lista vacía.
+											<div class="oblicuo outline">
+												<div class="contenido">
+													Se trata de un objeto atómico que denota una lista vacía.
+												</div>
 											</div>
-										</div>
 											<img id="imagen6" src="comprobacionI.png"  />
 											<div id="botonStep2" class="button">Siguiente</div>
 										</div>
 									</div>
-								<div class="modal-body modal-body-step-3">
-									<h1 class="panelContent"><img src="listaDr.png"  /></h1>
-									<div class="description"><p id="lVacia1"><span>Una lista vacía se puede escribir de diferentes formas en DrRacket como se muestra a continuación: </span></p>
+									<div class="modal-body modal-body-step-3">
+										<h1 class="panelContent"><img src="listaDr.png"  /></h1>
+										<div class="description"><p id="lVacia1"><span>Una lista vacía se puede escribir de diferentes formas en DrRacket como se muestra a continuación: </span></p>
+										</div>
+										<div class="caja">Con la constante especial <b>empty</b></div>
+										<div class="caja1">Con la constante especial  <b>null</b></div>
+										<div class="caja2">Con la forma tradicional de Lisp: <b>'()</b>, que es un carácter de apóstrofe seguido de paréntesis vacíos.</div>
+										<div class="description"><p id="lVacia2"><span>Implementacion de una Lista vacia en DrRacket</span></p>
+										</div>
+										<img id="ejemplo1" class="lightbox" src="listaV1.png" />
+										<img id="ejemplo2" class="lightbox" src="listaV2.png" />
+										<img id="ejemplo3" class="lightbox" src="listaV3.png" />
+										
+										<div id="botonStep3" class="button">Siguiente</div>
+										
 									</div>
-									<div class="caja">Con la constante especial <b>empty</b></div>
-									<div class="caja1">Con la constante especial  <b>null</b></div>
-									<div class="caja2">Con la forma tradicional de Lisp: <b>'()</b>, que es un carácter de apóstrofe seguido de paréntesis vacíos.</div>
-									<div class="description"><p id="lVacia2"><span>Implementacion de una Lista vacia en DrRacket</span></p>
-									</div>
-   		 							<img id="ejemplo1" class="lightbox" src="listaV1.png" />
-   		 							<img id="ejemplo2" class="lightbox" src="listaV2.png" />
-   		 							<img id="ejemplo3" class="lightbox" src="listaV3.png" />
-   		 							
-   		 							<div id="botonStep3" class="button">Siguiente</div>
-   		 						   
-								</div>
-								
-							</div>
-						</div>
-							<div class="rerun-button">Volver</div>
-					</div>
-
-<div class="panel" id="panel3">
-						<h1 class = "panelContent"><img src="quote.png" /></h1>
-						<p id="parrafo3"><span> Para definir una lista se debe asignar un nombre y se crea, ya sea vacía o conformada con los elementos que el programador incluya. La expresión para crear una lista tiene la siguiente forma:</span></p>
-						<div class="quote">
-							(define nombre-lista  ' (elem1 elem2 elem3…elemn))
-						</div>
-						<div class="container">
-							<details class="default square">
-								<summary>Nombre-lista</summary>
-								<p>Hace referecia al nombre que el programador le asigna a la lista según su gusto y conveniencia.
-								</p>
-							</details>
-							<details class="primary square">
-								<summary>Apóstrofe (') o función quote </summary>
-								<p>Indica que lo que sigue entre paréntesis es una lista de valores literales.</p>
-							</details>
-							<details class="success">
-								<summary>Elementos</summary>
-								<p>Donde los elem1 elem2 elem3…elemn son los componentes de la lista. Cada elemento puede ser un dato de <br> diferente tipo, ya sea numérico, carácter, cadena, símbolo u otra lista.</p>
-							</details>	
-
-						</div>   
-						<div class="botonPestaña3">
-							<div class="click">
-								<button onclick="simulator_FB ()" Id="click_button">Ej.</button>
-							</div>
-
-							<div Id="window">
-								<p><br><b>Ejemplo1:</b><br><br>
-									 Defina una lista con los números pares 2 4 6 y 8.
-									<br><br><b>Solucion:</b><br>
-									<br>(define numerosPares '(2 4 6 8))
-									<br>(display numerosPares)
 									
-									<!-- <img id="ejemplo3-2" src="bombillo.png" />>-->		 </p>
-									<button onclick="simulator_FB_close ()" Id="close"><b>X</b></button>
+								</div>
+							</div>
+							<div class="rerun-button">Volver</div>
+						</div>
+
+						<div class="panel" id="panel3">
+							<h1 class = "panelContent"><img src="quote.png" /></h1>
+							<p id="parrafo3"><span> Para definir una lista se debe asignar un nombre y se crea, ya sea vacía o conformada con los elementos que el programador incluya. La expresión para crear una lista tiene la siguiente forma:</span></p>
+							<div class="quote">
+								(define nombre-lista  ' (elem1 elem2 elem3…elemn))
+							</div>
+							<div class="container">
+								<details class="default square">
+									<summary>Nombre-lista</summary>
+									<p>Hace referecia al nombre que el programador le asigna a la lista según su gusto y conveniencia.
+									</p>
+								</details>
+								<details class="primary square">
+									<summary>Apóstrofe (') o función quote </summary>
+									<p>Indica que lo que sigue entre paréntesis es una lista de valores literales.</p>
+								</details>
+								<details class="success">
+									<summary>Elementos</summary>
+									<p>Donde los elem1 elem2 elem3…elemn son los componentes de la lista. Cada elemento puede ser un dato de <br> diferente tipo, ya sea numérico, carácter, cadena, símbolo u otra lista.</p>
+								</details>	
+
+							</div>   
+							<div class="botonPestaña3">
+								<div class="click">
+									<button onclick="simulator_FB ()" Id="click_button">Ej.</button>
+								</div>
+
+								<div Id="window">
+									<p><br><b>Ejemplo1:</b><br><br>
+										Defina una lista con los números pares 2 4 6 y 8.
+										<br><br><b>Solucion:</b><br>
+										<br>(define numerosPares '(2 4 6 8))
+										<br>(display numerosPares)
+										
+										<!-- <img id="ejemplo3-2" src="bombillo.png" />>-->		 </p>
+										<button onclick="simulator_FB_close ()" Id="close"><b>X</b></button>
+									</div>
+
+								</div>
+							</div>	
+
+							
+							<div class="panel" id="panel4">
+								<h1 class = "panelContent"><img src="funcionCons.png" /></h1>
+								<p class = "panelContent"><span></span></p>
+								<div class="tabsP4">
+									<div class="tabsP4-header">
+										<div class="borderP4"></div>
+										<ul>
+											<li class="activeP4"><a href="#tab-1" tab-id="1" ripple="ripple" ripple-color="#FFF">Definición</a></li>
+											<li><a href="#tab-2" tab-id="2" ripple="ripple" ripple-color="#FFF">Ejemplo 1</a></li>
+											<li><a href="#tab-3" tab-id="3" ripple="ripple" ripple-color="#FFF">Ejemplo 2</a></li>
+											<li><a href="#tab-4" tab-id="4" ripple="ripple" ripple-color="#FFF">Ejemplo 3</a></li>
+											<li><a href="#tab-5" tab-id="5" ripple="ripple" ripple-color="#FFF">Tab 5</a></li>
+										</ul>
+									</div>
+									<div class="tabsP4-content">
+										<div class="tabP4 active" tab-id="1">nombre</div>
+										<div class="tabP4" tab-id="2">2. paula</div>
+										<div class="tabP4" tab-id="3">3. andrea.</div>
+										<div class="tabP4" tab-id="4">4. correa.</div>
+										<div class="tabP4" tab-id="5">5. villalobos.</div>
+									</div>
 								</div>
 
 							</div>
-						</div>	
+							
+							<div class="panel" id="panel5">
+								<h1 class = "panelContent"></h1>
+								<p id="indicacion2" class = "panelContent"><span>Haz clic sobre las pestañas verticales para observar los ejemplos.</span></p>
 
-						<div class="panel" id="panel4">
-							<h1 class = "panelContent"><img src="quote.png" /></h1>
-							<p class = "panelContent"><span></span></p>
-						</div>
-						<div class="panel" id="panel5">
-							<h1 class = "panelContent"></h1>
-							<p id="indicacion2" class = "panelContent"><span>Haz clic sobre las pestañas verticales para observar los ejemplos.</span></p>
-
-							<div class="tabbed-content clearfix">
+								<div class="tabbed-content clearfix">
 									<!--Tabbed navigation-->
-							    <ul class="tabss">
-							      <li class="tab-link current" data-tab="text-tab">Estructura</li>
+									<ul class="tabss">
+										<li class="tab-link current" data-tab="text-tab">Estructura</li>
 										<li class="tab-link" data-tab="video-tab">Ejemplo 1</li>
 										<li class="tab-link" data-tab="audio-tab">Ejemplo 2</li>
 										<li class="tab-link" data-tab="ejemplo3-tab">Ejemplo 3</li>
-								</ul>
-								<!--Wrapper to contain interchanging content-->
-								<div class="tabs-wrapper">
-									<!--textual tab content-->
-									<div id="text-tab" class="tab-content current">
-										<h2><img id="imagen7" src="estructura.png" /></h2>
-										
+									</ul>
+									<!--Wrapper to contain interchanging content-->
+									<div class="tabs-wrapper">
+										<!--textual tab content-->
+										<div id="text-tab" class="tab-content current">
+											<h2><img id="imagen7" src="estructura.png" /></h2>
+											
 											<div class="wrapper clearfix">
 												
 												<aside class="note-wrap note-blue">
@@ -354,60 +376,61 @@ and open the template in the editor.
 												<img id="imagen8" src="estructuraLista.png" />
 												<p id="estructura"><span>PAREJA</span></p>
 											</div>
-									</div> 
-									<!--video tab content-->
-									<div id="video-tab" class="tab-content">
-										<h2><img id="imagen9" src="ejemplo1.png" /></h2>
-										<p id="esEjemplo1"><span> La lista <b>'(1 2 3 4)</b> se construye con la siguiente secuencia de parejas:</span></p>
-										<p id="secuencia"><span><img id="imagen11" src="secuenciaParejas.png"></span></p>
+										</div> 
+										<!--video tab content-->
+										<div id="video-tab" class="tab-content">
+											<h2><img id="imagen9" src="ejemplo1.png" /></h2>
+											<p id="esEjemplo1"><span> La lista <b>'(1 2 3 4)</b> se construye con la siguiente secuencia de parejas:</span></p>
+											<p id="secuencia"><span><img id="imagen11" src="secuenciaParejas.png"></span></p>
 											<img  id="imagen12" src="anuncio.png" />	
 											<img  id="imagen13" src="eInterna.gif" />														
-									</div>
-									<!--audio tab content-->
-									<div id="audio-tab" class="tab-content">
-										<h2><img id="imagen10" src="ejemplo2.png" /></h2>
-										<p id="esEjemplo2"><span> Realice la estructura interna de la lista que almacena los múltiplos de <b>3</b> menores que <b>15</b>, utilizando los diagramas de caja y puntero. </span></p>
-										<img  id="imagen14" src="bien.png" />	
-										<img  id="imagen15" src="ejemplo2.gif" />
-									</div>
-									<div id="ejemplo3-tab" class="tab-content">
-										<h2><img id="imagen16" src="subtituloEjemplo3.png"/></h2>
-										<p id="esEjemplo2"><span> Realice la estructura interna de la lista: ‘(0 1 2 3 4 5 6 7 8 9). También defina esta lista en DrRacket utilizando la función cons.  </span></p>
-										<img  id="imagen17" src="ejemplo3.png" />	
-										<img  id="imagen18" class="lightbox" src="ejemplo3Estructura.png" />
-										<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-										  <defs>
-											  <symbol id="arrow" viewBox="0 0 100 100">
-											  	<path d="M12.5 45.83h64.58v8.33H12.5z"/>
-										    		<path d="M59.17 77.92l-5.84-5.84L75.43 50l-22.1-22.08 5.84-5.84L87.07 50z"/>
-											  </symbol>
-										  </defs>
-										</svg>		
-												<span class="titulo">
-													IMPLEMENTACION EN DrRacket
-													<span>
-														<svg>
-															<use xlink:href="#arrow" href="#arrow"></use>
-														</svg>
-													</span>
+										</div>
+										<!--audio tab content-->
+										<div id="audio-tab" class="tab-content">
+											<h2><img id="imagen10" src="ejemplo2.png" /></h2>
+											<p id="esEjemplo2"><span> Realice la estructura interna de la lista que almacena los múltiplos de <b>3</b> menores que <b>15</b>, utilizando los diagramas de caja y puntero. </span></p>
+											<img  id="imagen14" src="bien.png" />	
+											<img  id="imagen15" src="ejemplo2.gif" />
+										</div>
+										<div id="ejemplo3-tab" class="tab-content">
+											<h2><img id="imagen16" src="subtituloEjemplo3.png"/></h2>
+											<p id="esEjemplo2"><span> Realice la estructura interna de la lista: ‘(0 1 2 3 4 5 6 7 8 9). También defina esta lista en DrRacket utilizando la función cons.  </span></p>
+											<img  id="imagen17" src="ejemplo3.png" />	
+											<img  id="imagen18" class="lightbox" src="ejemplo3Estructura.png" />
+											<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+												<defs>
+													<symbol id="arrow" viewBox="0 0 100 100">
+														<path d="M12.5 45.83h64.58v8.33H12.5z"/>
+														<path d="M59.17 77.92l-5.84-5.84L75.43 50l-22.1-22.08 5.84-5.84L87.07 50z"/>
+													</symbol>
+												</defs>
+											</svg>		
+											<span class="titulo">
+												IMPLEMENTACION EN DrRacket
+												<span>
+													<svg>
+														<use xlink:href="#arrow" href="#arrow"></use>
+													</svg>
 												</span>
+											</span>
+										</div>
 									</div>
-								</div>
-							</div>				
+								</div>				
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-			<script src='https://raw.githubusercontent.com/WickyNilliams/enquire.js/master/dist/enquire.min.js'></script>
-			<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-			<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-			<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-			
-    		<script src="lightbox.js"></script>
-			<script  src="tema1.js"></script>
-			<script  src="pestaña2.js"></script>
-			<script  src="boton.js"></script>
-		</body>
-		</html>
+				<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+				<script src='https://raw.githubusercontent.com/WickyNilliams/enquire.js/master/dist/enquire.min.js'></script>
+				<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+				<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+				<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+				
+				<script src="lightbox.js"></script>
+				<script  src="tema1.js"></script>
+				<script  src="pestaña2.js"></script>
+				<script  src="boton.js"></script>
+				<script  src="IndexPestaña4.js"></script>
+			</body>
+			</html>
