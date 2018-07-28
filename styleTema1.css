@@ -913,6 +913,12 @@ h1.panelContent img {
 #imagen13 {
   margin: 200px  -517px;
 }
+#imagen14 {
+  margin: 107px  49px;
+}
+#imagen15 {
+  margin: 100px  -547px;
+}
 
 
 .quote {
@@ -1967,10 +1973,10 @@ font-size: 17px;
   line-height: 1;
   color:#000000;
   position: absolute;
-  left: -45px;
+  left: -59px;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  width: 710px;
+  width: 720px;
  }
 
 #secuencia span {
