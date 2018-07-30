@@ -785,6 +785,13 @@ height: 460px;
 
 
 }
+#panel4{
+height: 460px;
+}
+
+#panel5{
+height: 460px;
+}
 
 h1.panelContent {
   font-size: 2.2rem;
@@ -2311,9 +2318,11 @@ box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 box-sizing: border-box;
 margin: 100px auto 10px;
 overflow: hidden;
-height: 300px;
-top: -460px;
-width: 800px;
+height: 410px;
+top: -470px;
+width: 900px;
+border-radius: 0 10px 10px 10px;
+border: 4px solid #ffcc00;
 
 }
 .tabsP4-header {
@@ -2321,6 +2330,7 @@ width: 800px;
   background: #FACC2E;
   overflow: hidden; 
   height: 40px;
+  width: 900px;
 }
 .tabsP4-header .borderP4 {
   position: absolute;
@@ -2336,7 +2346,7 @@ width: 800px;
   flex-direction: row;
   flex-wrap: wrap;
   font-size: 13px;
-  width: 600PX;
+  width: 900px;
 }
 .tabsP4-header li {
   transition: 0.3s ease;
@@ -2360,8 +2370,9 @@ font-weight: bold;
   padding: 15px 20px;
   transition: 0.3s ease;
   overflow: hidden;
-  background:linear-gradient(to bottom, #ffffff 0%, #F5DA81 100%);
-  height: 400px;
+  background:#FFFFFF ;
+  height: 380px;
+
 }
 .tabsP4-content:after {
   content: '';
@@ -2372,7 +2383,7 @@ font-weight: bold;
   width: 100%;
   height: 1px;
   box-shadow: 0 0 20px 10px #FFFFFF;
-  height: 500px;
+  height: 550px;
 }
 .tabsP4-content .tabP4 {
   display: none;
@@ -2402,7 +2413,14 @@ font-weight: bold;
   color: #4285F4 !important;
 }
 
+#imagen19{
+margin: -15px -465px;
+top: 5px;
+}
 
+#imagen20{
+  margin: -20px  -95px;
+}
 
 
 
