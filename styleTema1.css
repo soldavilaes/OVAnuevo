@@ -950,6 +950,19 @@ h1.panelContent img {
   margin: -25px  -555px;
 }
 
+#imagen24 {
+   height: 130px;
+   width: 200px;
+  margin: 213px  -550px;
+  animation: float 1s infinite ease-in-out alternate;
+}
+#imagen25 {
+    height: 130px;
+   width: 200px;
+  margin: 213px  -320px;
+   animation: float 1s infinite ease-in-out alternate;
+}
+
 .quote {
     text-align: center;
     margin: 35px 230px;
@@ -971,6 +984,14 @@ h1.panelContent img {
 @media only screen and (max-width: 700px) and (max-width: 450px) {
   html {
     font-size: 12px;
+  }
+}
+
+@keyframes float {
+  100% {
+    transform: translateX(20px);
+    box-shadow: 0 40px 10px -18px hsla(0,0%,0%,.2),
+              0 40px 16px -12px hsla(0,0%,0%,.2);
   }
 }
 
@@ -1301,6 +1322,10 @@ label:first-child {
   position: relative;
 }
 
+.nav1 {
+  position: relative;
+}
+
 .containerMas {
   margin: auto;
   top: 160px;
@@ -1388,6 +1413,109 @@ label:first-child {
   transform: rotate(135deg);
   box-shadow: 0 0 0 0 transparent;
 }
+
+
+/* SEGUNDO BOTON + */
+.containerMass, .buttonMas2 {
+  position: absolute;
+}
+
+.nav2 {
+  position: relative;
+}
+
+.containerMass {
+  margin: auto;
+  top: 160px;
+  left: 70px;
+  margin-left: 390px;
+  width: 200px;
+}
+
+#toggles {
+  display: none;
+}
+
+.buttonMass {
+  z-index: 999;
+  width: 43px;
+  height: 43px;
+  background: #00FFBF;
+  border-radius: 100%;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin-left: 90px;
+  position: relative;
+  margin-top: 80px;
+}
+
+.buttonMass:hover {
+  background: #00FF40;
+}
+
+.buttonMass:before {
+  position: absolute;
+  top: 20px;
+  left: 9px;
+  content: '';
+  width: 25px;
+  height: 2px;
+  background: #FFF;
+  transform: rotate(90deg);
+}
+.buttonMass:after {
+  position: absolute;
+  top: 20px;
+  left: 9px;
+  content: '';
+  width: 25px;
+  height: 2px;
+  background: #FFF;
+}
+
+.nav2 {
+  transform: translateY(-10%);
+  opacity: 0;
+  top: -48px;
+  margin-left: 20px;
+  transition: all 0.5s ease-in-out;
+  background: #F4FA58;
+  width: 180px;
+  height: 110px;
+  border-radius: 5px;
+  transform: translateY(0%);
+  box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Sansita;
+  line-height: 1;
+  color: #000000;
+  font-weight: lighter;
+  padding: 3px;
+}
+
+.nav2 a {
+  text-align: center;
+  display: block;
+  margin: 20px 0;
+  color: #F28482;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#toggles:checked ~ .nav2 {
+  opacity: 1;
+  transform: translateY(10%);
+}
+
+#toggles:checked ~ .button {
+  transform: rotate(135deg);
+  box-shadow: 0 0 0 0 transparent;
+}
+
+
 
 /* CAJA CON ESTILO*/
 .cuadrado {
@@ -2447,9 +2575,9 @@ top: 5px;
   overflow: hidden;
   width: 97%;
   margin: 0 auto;
-  -moz-box-shadow: 0 0 30px #1a1a1a;
-  -webkit-box-shadow: 0 0 30px #1a1a1a;
-  box-shadow: 0 0 30px #1a1a1a;
+ -moz-box-shadow: 0 0 10px #1a1a1a;
+  -webkit-box-shadow: 0 0 10px #1a1a1a;
+  box-shadow: 0 0 10px #1a1a1a;
   top: -385px;
   height: 385px;
 }
@@ -2470,6 +2598,7 @@ top: 5px;
   top: 5px;
   color: #000000;
   font-family: 'Open Sans';
+  text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87
 }
 
 [class^="slide__"] h2:after {
@@ -2605,14 +2734,15 @@ top: 5px;
   float: right;
   width: 80%;
   height: 510px;
-  
+  font-style: normal;
 }
 
 [class$="__side-by-side"] [class$="content"] p {
- margin: 40px;
+  margin: 28px;
   width: 670px;
-left: -42px;
-font-style: normal;
+  left: -27px;
+  font-family: 'Open Sans';
+  line-height: 1;
 }
 
 /* LIBRO */
@@ -2627,11 +2757,11 @@ font-style: normal;
     rgba(218,5,9, 0.70) 50%,
     rgba(218,5,9, 0.70) 94%, 
     rgba(48,14,43, 0.85) 100%),
-    url("racket-detail.jpg");
+    url("logoRacket.png");
   border: 1px solid #666;
   width: 265px;
   height: 250px;
-  margin: 43px 30px;
+  margin: 43px 20px;
   border-radius: 2px 30px 30px 2px ;
 }
 
@@ -2878,7 +3008,7 @@ font-style: normal;
           transform-origin: center center;
 }
 
-/*Hojas de Abajo*/
+/*HOJAS DE ABAJO*/
 
 #hoja4 {
   color: red;
@@ -2965,8 +3095,6 @@ font-style: normal;
 }
 
 
-
-
 @-webkit-keyframes rotar {
   0% {
     -webkit-transform: rotateZ(0deg) scaleX(1) scaleY(1);
@@ -3023,3 +3151,115 @@ font-style: normal;
             transform: rotateZ(-360deg) scaleX(1) scaleY(1);
   }
 }
+
+/* DEFINICION DE CAR Y FIRST */
+#definicion1 span {
+  font-style: normal;
+  font-family: 'Open Sans';
+  font-size: 18px;
+}
+
+/* SINTAXIS*/
+.boxTexto {
+  font-family:'Open Sans';
+  box-sizing: border-box; 
+  margin: 55px 150px;
+  width:100px;
+  text-align: center;
+  background: #ebebeb;
+  padding: 2px;
+  
+  box-shadow: 
+    inset 0 0 0 3px #20e4f4, 
+    inset 0 0 0 5px white,
+    0 1px 0px black;
+    height: 30px;
+}
+
+#cTexto2 {
+  font-family: 'Open Sans';
+  box-sizing: border-box; 
+  margin: -85px 390px;
+  width:100px;
+  text-align: center;
+  background: #ebebeb;
+  padding: 2px;
+  
+  box-shadow: 
+    inset 0 0 0 3px #20e4f4, 
+    inset 0 0 0 5px white,
+    0 1px 0px black;
+}
+
+#cTexto2 span {
+  font-style: normal;
+}
+
+#cTexto1 span {
+  font-style: normal;
+} 
+
+#ej1 {
+  font-style: normal;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  margin: 120px 28px;
+}
+
+#ej1 span {
+  font-style: normal;
+}
+
+/* CAJA DE TEXTO 2*/
+.cajaTexto {
+    position: absolute;
+    width:660px;
+    padding: 4px;
+    box-sizing: border-box;
+    border-radius: 20px 0 20px 0;
+    transform-style: preserve-3d;
+    background: -webkit-linear-gradient(top left, #01DFA5 50%, #01DFD7 50%);
+    background:    -moz-linear-gradient(top left, #01DFA5 50%, #01DFD7 50%);
+    background:     -ms-linear-gradient(top left, #01DFA5 50%, #01DFD7 50%);
+    background:      -o-linear-gradient(top left, #01DFA5 50%, #01DFD7 50%);
+    background:         linear-gradient(top left, #01DFA5 50%, #01DFD7 50%);
+    margin: 148px 1px;
+}
+
+.cajaTexto:before {
+    content: '';
+    position: absolute;
+    left:5%; top:5%;
+    width:90%; height:90%;
+    border-radius: inherit;
+    background: rgba(0,0,0,.1);
+    box-shadow: 0 0 40px 20px rgba(0,0,0,.1);
+    transform: translateZ(-100px);
+}
+.cajaTexto-contenido {
+    background: #F2F2F2;
+    padding: 1px;
+    box-sizing: border-box;
+    border-radius: 10px 0 10px 0;
+    height: 22px;
+}
+.cajaTexto-text {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    transform: translateZ(15px);
+    padding: 0px;
+    top: -7px;
+    height: 24px;
+}
+.cajaTexto-text b {
+    color: coral;
+    font-weight: 300;
+}
+
+/* OTRO LIGHBOX*/
+
+

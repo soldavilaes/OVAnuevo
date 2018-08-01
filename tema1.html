@@ -473,39 +473,65 @@ and open the template in the editor.
 								      Funciones más Utilizadas
 								      </h2>
 								     <div class="cover-front">
-  <div class="va-parent">
-    <div class="va-child">
-      <span class="tituloD">Introducción</span>
-      <span class="caratula"><br><br>El lenguaje de programación DrRacket posee diferentes funciones que permiten manipular una lista, a través de ellas es posible acceder a una lista, adicionar elementos, unir listas, calcular la longitud, buscar y filtrar datos, entre otras. </span>
-    </div>
-  </div>
-</div>
+									  <div class="va-parent">
+									    <div class="va-child">
+									      <span class="tituloD">Introducción</span>
+									      <span class="caratula"><br><br>El lenguaje de programación DrRacket posee diferentes funciones que permiten manipular una lista, a través de ellas es posible acceder a una lista, adicionar elementos, unir listas, calcular la longitud, buscar y filtrar datos, entre otras. </span>
+									    </div>
+									  </div>
+									</div>
 
-<div class="cover-back">
-  <div class="back">
-    
-    </div>
-</div>
-		<div class="boxes effect3 seafoam">
-  Las funciones que se muestran a continuación están predefinidas en DrRacket y pueden ser utilizadas en cualquier parte del programa. 
-</div>
+									<div class="cover-back">
+									  <div class="back">
+									    
+									    </div>
+									</div>
+											<div class="boxes effect3 seafoam">
+									  Las funciones que se muestran a continuación están predefinidas en DrRacket y pueden ser utilizadas en cualquier parte del programa. 
+									</div>
 
-	<div class="hoja">Car y First </div>	
-	<div id="hoja2" class="hoja">Cdr y Rest </div>	
-	<div id="hoja3" class="hoja">Lenght</div>		                 
-	<div id="hoja4" class="hoja">Append</div>
-	<div id="hoja5" class="hoja">Reverse</div>	
-	<div id="hoja6" class="hoja">Member</div>
+									<div class="hoja">Car y First </div>	
+									<div id="hoja2" class="hoja">Cdr y Rest </div>	
+									<div id="hoja3" class="hoja">Lenght</div>		                 
+									<div id="hoja4" class="hoja">Append</div>
+									<div id="hoja5" class="hoja">Reverse</div>	
+									<div id="hoja6" class="hoja">Member</div>
 
 
 								    </div>
 								    <div class='slide--content__pane'>
 								      <h2>
-								        <i class='fa fa-glass'></i>
+								        <i></i>
 								        Funciones Car y First
 								      </h2>
-								      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-								    </div>
+								      <p id="definicion1"><span>Ambas funciones realizan la misma acción, la cual consiste en retornar el primer elemento de una lista. Las sintaxis de <b>Car</b> y <b>First</b> es la siguiente:</span></p>
+								      <div id="cTexto1" class="boxTexto">
+  											<h4><span>(car lista)</span></h4>
+									  </div>
+									  <div id="cTexto2" class="boxTexto">
+  											<h4><span>(first lista)</span></h4>
+									  </div>
+									  <p id="ej1"><span><b>Ejemplo:</b> obtener el primer elemento de la lista colores-primarios definida de la siguiente manera:</span></p>
+									
+									    <div class="cajaTexto">
+									        <div class="cajaTexto-contenido">
+									            <div class="cajaTexto-text">
+									              (define colores-primarios ( cons "Rojo" ( cons "Amarillo" ( cons "Azul" empty) ) ) )
+									            
+									            </div>
+									        </div>
+									    </div>
+									  <img  id="imagen24" class="lightbox" src="ejemCdr.png" />
+									    <img id="imagen25" class="lightbox" src="CarFirst.png" />
+									<div class="containerMass">
+											<input type="checkbox" id="toggles" />
+											<label class="buttonMass" for="toggles"></label>
+											<nav class="nav2">
+												<br>
+												Al aplicar estas funciones a una lista vacía se genera error de ejecución, debido a que una lista vacía no posee elementos. 
+											</nav>
+										</div>
+						   			 </div>
 								    <div class='slide--content__pane'>
 								      <h2>
 								        <i class='fa fa-heart'></i>
