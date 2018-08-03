@@ -28,6 +28,7 @@ and open the template in the editor.
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Antic+Slab|PT+Sans:400,700' rel='stylesheet' type='text/css'>
 <link rel='stylesheet' href='https://tipso.object505.com/tipso.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Gochi Hand'>
 
 <!--
 	<meta name="viewport" content="width=device-width">
@@ -327,7 +328,7 @@ and open the template in the editor.
 								</div>
 							</div>	
 
-							
+
 							<div class="panel" id="panel4">
 								<h1 class = "panelContent"><img src="funcionCons.png" /></h1>
 								<p class = "panelContent"><span></span></p>
@@ -343,262 +344,320 @@ and open the template in the editor.
 										</ul>
 									</div>
 									<div class="tabsP4-content">
-										<div class="tabP4 active" tab-id="1"> <img id="imagen19" src="libreta.png"/>
-										<img id="imagen20" src="estructuraFuncionCons.png"/></div>
-										<div class="tabP4" tab-id="2">2. paula</div>
-										<div class="tabP4" tab-id="3">3. andrea.</div>
-										<div class="tabP4" tab-id="4">4. correa.</div>
-										<div class="tabP4" tab-id="5">5. villalobos.</div>
-									</div>
-								</div>
+										<div class="tabP4 active" tab-id="1">
+											<div id="note">
+												<div class="lines">
+													<span class="horizontal">
+														<span></span>
+														<span></span>
+														<span></span>
+														<span></span>
+														<span></span>
+														<span></span>
+														<span></span>
+													</span>
+													<span class="vertical">
+														<span></span>
+														<span></span>
+													</span>
+												</div>
+												<div class="sticky">
+													<div class="inner">
+														<span class="scratch"></span>
+														<div class="paper">
+															<b>
+																Al igual que con el operador,
+																quot una lista puede ser 
+																definida con la función CONS, 
+																como se muestra a continuación:
+															</b>
+														</div>
+													</div>
+												</div>
 
-							</div>
-							
-							<div class="panel" id="panel5">
-								<h1 class = "panelContent"></h1>
-								<p id="indicacion2" class = "panelContent"><span>Haz clic sobre las pestañas verticales para observar los ejemplos.</span></p>
-
-								<div class="tabbed-content clearfix">
-									<!--Tabbed navigation-->
-									<ul class="tabss">
-										<li class="tab-link current" data-tab="text-tab">Estructura</li>
-										<li class="tab-link" data-tab="video-tab">Ejemplo 1</li>
-										<li class="tab-link" data-tab="audio-tab">Ejemplo 2</li>
-										<li class="tab-link" data-tab="ejemplo3-tab">Ejemplo 3</li>
-									</ul>
-									<!--Wrapper to contain interchanging content-->
-									<div class="tabs-wrapper">
-										<!--textual tab content-->
-										<div id="text-tab" class="tab-content current">
-											<h2><img id="imagen7" src="estructura.png" /></h2>
-											
-											<div class="wrapper clearfix">
-												
-												<aside class="note-wrap note-blue">
-													<p>Una lista está conformada por una secuencia de parejas, en las cuales el primer elemento es el dato y el segundo el resto de la lista.</p>
-												</aside>
-												<aside class="note-wrap note-pink">
-													<p>una lista habitualmente terminara en una <b>lista vacía (empty)</b> o espacio en blanco, aunque este no sea visible. </p>
-												</aside>
-												<img id="imagen8" src="estructuraLista.png" />
-												<p id="estructura"><span>PAREJA</span></p>
 											</div>
-										</div> 
-										<!--video tab content-->
-										<div id="video-tab" class="tab-content">
-											<h2><img id="imagen9" src="ejemplo1.png" /></h2>
-											<p id="esEjemplo1"><span> La lista <b>'(1 2 3 4)</b> se construye con la siguiente secuencia de parejas:</span></p>
-											<p id="secuencia"><span><img id="imagen11" src="secuenciaParejas.png"></span></p>
-											<img  id="imagen12" src="anuncio.png" />	
-											<img  id="imagen13" src="eInterna.gif" />														
-										</div>
-										<!--audio tab content-->
-										<div id="audio-tab" class="tab-content">
-											<h2><img id="imagen10" src="ejemplo2.png" /></h2>
-											<p id="esEjemplo2"><span> Realice la estructura interna de la lista que almacena los múltiplos de <b>3</b> menores que <b>15</b>, utilizando los diagramas de caja y puntero. </span></p>
-											<img  id="imagen14" src="bien.png" />	
-											<img  id="imagen15" src="ejemplo2.gif" />
-										</div>
-										<div id="ejemplo3-tab" class="tab-content">
-											<h2><img id="imagen16" src="subtituloEjemplo3.png"/></h2>
-											<p id="esEjemplo2"><span> Realice la estructura interna de la lista: ‘(0 1 2 3 4 5 6 7 8 9). También defina esta lista en DrRacket utilizando la función cons.  </span></p>
-											<img  id="imagen17" src="ejemplo3.png" />	
-											<img  id="imagen18" class="lightbox" src="ejemplo3Estructura.png" />
-											<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-												<defs>
-													<symbol id="arrow" viewBox="0 0 100 100">
-														<path d="M12.5 45.83h64.58v8.33H12.5z"/>
-														<path d="M59.17 77.92l-5.84-5.84L75.43 50l-22.1-22.08 5.84-5.84L87.07 50z"/>
-													</symbol>
-												</defs>
-											</svg>		
-											<span class="titulo">
-												IMPLEMENTACION EN DrRacket
-												<span>
-													<svg>
-														<use xlink:href="#arrow" href="#arrow"></use>
-													</svg>
-												</span>
-											</span>
+											<img id="imagen20" src="esFuncionCons.png"/></div>
+
+											<div class="tabP4" tab-id="2">
+												<span><b>Ejemplo 1:</b> <br>Defina una lista con el operador cons que contenga el elemento Mercury y una lista vacía.</span>
+												<img id="imagen33" src="ejm4.gif"/>
+												<!--<img id="imagen27"  class="lightbox" src="rEjm2.png"/>-->
+												<img id="imagen31" src="muñeca.png"/>
+												<div class="boxesP4">
+													De acuerdo a esta expresión, el operador cons tiene dos campos: el primero y el resto. En este ejemplo específico, el primer campo contiene 'Mercurio y el segundo campo contiene una lista vacía. <br>
+													Es importante aclarar que el resto de la lista no siempre es una lista vacía sino que puede ser otra lista con otro elemento definida con el operador cons. 
+												</div>
+												<img id="imagen32" src="nube.png"/>
+
+												<div class="botonPestaña4">
+													<div class="click4">
+														<button onclick="simulator_FB ()" Id="click_button4">Ej.</button>
+													</div>
+
+													<div Id="window4">
+														
+															<img id="drP4" src="drP4.png"/>
+															<!-- <img id="ejemplo3-2" src="bombillo.png" />>-->		
+															<button onclick="simulator_FB_close ()" Id="close4"><b>X</b></button>
+													</div>
+
+												</div>
+
+												</div>
+											</div>
+											<div class="tabP4" tab-id="3">3. andrea.</div>
+											<div class="tabP4" tab-id="4">4. correa.</div>
+											<div class="tabP4" tab-id="5">5. villalobos.</div>
 										</div>
 									</div>
-								</div>				
-							</div>
-							<!--PESTAÑA 6-->
-							<div class="panel" id="panel6">
-								<h1 class = "panelContent"></h1>
-								 <img id="imagen21" src="funcionesBasica.png" />
-								<p id="indicacion2" class = "panelContent"><span> Haz clic sobre las pestañas verticales para observar las funciones.</span>
-								  <!-- / .slide__side-by-side or slide__stacked -->
-								<div class='slide__side-by-side'>
-								  <div class='slide--tabs'>
-								    <ul>
-								      <li>
-								        <i class='fa fa-caret-right'></i>
-								        Funciones
-								      </li>
-								      <li>
-								        <i class='fa fa-caret-right'></i>
-								        Car y First
-								      </li>
-								      <li>
-								        <i class='fa fa-caret-right'></i>
-								        Cdr y Rest
-								      </li>
-								      <li>
-								        <i class='fa fa-caret-right'></i>
-								        Length
-								      </li>
-								      <li>
-								        <i class='fa fa-caret-right'></i>
-								        Append
-								      </li>
-								      <li>
-								        <i class='fa fa-caret-right'></i>
-								        Reverse
-								      </li>
-								      <li>
-								        <i class='fa fa-caret-right'></i>
-								        Member
-								      </li>
-								      <li>
-								        <i class='fa fa-caret-right'></i>
-								        De Comprobacion
-								      </li>
-								    </ul>
-								  </div>
-								  <div class='slide--content'>
-								    <div  class='slide--content__pane'>
-								      <h2>
-								       <i>  </i>
-								      Funciones más Utilizadas
-								      </h2>
-								     <div class="cover-front">
-									  <div class="va-parent">
-									    <div class="va-child">
-									      <span class="tituloD">Introducción</span>
-									      <span class="caratula"><br><br>El lenguaje de programación DrRacket posee diferentes funciones que permiten manipular una lista, a través de ellas es posible acceder a una lista, adicionar elementos, unir listas, calcular la longitud, buscar y filtrar datos, entre otras. </span>
-									    </div>
-									  </div>
+
+
+
+									<div class="panel" id="panel5">
+										<h1 class = "panelContent"></h1>
+										<p id="indicacion2" class = "panelContent"><span>Haz clic sobre las pestañas verticales para observar los ejemplos.</span></p>
+
+										<div class="tabbed-content clearfix">
+											<!--Tabbed navigation-->
+											<ul class="tabss">
+												<li class="tab-link current" data-tab="text-tab">Estructura</li>
+												<li class="tab-link" data-tab="video-tab">Ejemplo 1</li>
+												<li class="tab-link" data-tab="audio-tab">Ejemplo 2</li>
+												<li class="tab-link" data-tab="ejemplo3-tab">Ejemplo 3</li>
+											</ul>
+											<!--Wrapper to contain interchanging content-->
+											<div class="tabs-wrapper">
+												<!--textual tab content-->
+												<div id="text-tab" class="tab-content current">
+													<h2><img id="imagen7" src="estructura.png" /></h2>
+
+													<div class="wrapper clearfix">
+
+														<aside class="note-wrap note-blue">
+															<p>Una lista está conformada por una secuencia de parejas, en las cuales el primer elemento es el dato y el segundo el resto de la lista.</p>
+														</aside>
+														<aside class="note-wrap note-pink">
+															<p>una lista habitualmente terminara en una <b>lista vacía (empty)</b> o espacio en blanco, aunque este no sea visible. </p>
+														</aside>
+														<img id="imagen8" src="estructuraLista.png" />
+														<p id="estructura"><span>PAREJA</span></p>
+													</div>
+												</div> 
+												<!--video tab content-->
+												<div id="video-tab" class="tab-content">
+													<h2><img id="imagen9" src="ejemplo1.png" /></h2>
+													<p id="esEjemplo1"><span> La lista <b>'(1 2 3 4)</b> se construye con la siguiente secuencia de parejas:</span></p>
+													<p id="secuencia"><span><img id="imagen11" src="secuenciaParejas.png"></span></p>
+													<img  id="imagen12" src="anuncio.png" />	
+													<img  id="imagen13" src="eInterna.gif" />														
+												</div>
+												<!--audio tab content-->
+												<div id="audio-tab" class="tab-content">
+													<h2><img id="imagen10" src="ejemplo2.png" /></h2>
+													<p id="esEjemplo2"><span> Realice la estructura interna de la lista que almacena los múltiplos de <b>3</b> menores que <b>15</b>, utilizando los diagramas de caja y puntero. </span></p>
+													<img  id="imagen14" src="bien.png" />	
+													<img  id="imagen15" src="ejemplo2.gif" />
+												</div>
+												<div id="ejemplo3-tab" class="tab-content">
+													<h2><img id="imagen16" src="subtituloEjemplo3.png"/></h2>
+													<p id="esEjemplo2"><span> Realice la estructura interna de la lista: ‘(0 1 2 3 4 5 6 7 8 9). También defina esta lista en DrRacket utilizando la función cons.  </span></p>
+													<img  id="imagen17" src="ejemplo3.png" />	
+													<img  id="imagen18" class="lightbox" src="ejemplo3Estructura.png" />
+													<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+														<defs>
+															<symbol id="arrow" viewBox="0 0 100 100">
+																<path d="M12.5 45.83h64.58v8.33H12.5z"/>
+																<path d="M59.17 77.92l-5.84-5.84L75.43 50l-22.1-22.08 5.84-5.84L87.07 50z"/>
+															</symbol>
+														</defs>
+													</svg>		
+													<span class="titulo">
+														IMPLEMENTACION EN DrRacket
+														<span>
+															<svg>
+																<use xlink:href="#arrow" href="#arrow"></use>
+															</svg>
+														</span>
+													</span>
+												</div>
+											</div>
+										</div>				
 									</div>
+									<!--PESTAÑA 6-->
+									<div class="panel" id="panel6">
+										<h1 class = "panelContent"></h1>
+										<img id="imagen21" src="funcionesBasica.png" />
+										<p id="indicacion2" class = "panelContent"><span> Haz clic sobre las pestañas verticales para observar las funciones.</span>
+											<!-- / .slide__side-by-side or slide__stacked -->
+											<div class='slide__side-by-side'>
+												<div class='slide--tabs'>
+													<ul>
+														<li>
+															<i class='fa fa-caret-right'></i>
+															Funciones
+														</li>
+														<li>
+															<i class='fa fa-caret-right'></i>
+															Car y First
+														</li>
+														<li>
+															<i class='fa fa-caret-right'></i>
+															Cdr y Rest
+														</li>
+														<li>
+															<i class='fa fa-caret-right'></i>
+															Length
+														</li>
+														<li>
+															<i class='fa fa-caret-right'></i>
+															Append
+														</li>
+														<li>
+															<i class='fa fa-caret-right'></i>
+															Reverse
+														</li>
+														<li>
+															<i class='fa fa-caret-right'></i>
+															Member
+														</li>
+														<li>
+															<i class='fa fa-caret-right'></i>
+															De Comprobacion
+														</li>
+													</ul>
+												</div>
+												<div class='slide--content'>
+													<div  class='slide--content__pane'>
+														<h2>
+															<i>  </i>
+															Funciones más Utilizadas
+														</h2>
+														<div class="cover-front">
+															<div class="va-parent">
+																<div class="va-child">
+																	<span class="tituloD">Introducción</span>
+																	<span class="caratula"><br><br>El lenguaje de programación DrRacket posee diferentes funciones que permiten manipular una lista, a través de ellas es posible acceder a una lista, adicionar elementos, unir listas, calcular la longitud, buscar y filtrar datos, entre otras. </span>
+																</div>
+															</div>
+														</div>
 
-									<div class="cover-back">
-									  <div class="back">
-									    
-									    </div>
-									</div>
-											<div class="boxes effect3 seafoam">
-									  Las funciones que se muestran a continuación están predefinidas en DrRacket y pueden ser utilizadas en cualquier parte del programa. 
-									</div>
+														<div class="cover-back">
+															<div class="back">
 
-									<div class="hoja">Car y First </div>	
-									<div id="hoja2" class="hoja">Cdr y Rest </div>	
-									<div id="hoja3" class="hoja">Lenght</div>		                 
-									<div id="hoja4" class="hoja">Append</div>
-									<div id="hoja5" class="hoja">Reverse</div>	
-									<div id="hoja6" class="hoja">Member</div>
+															</div>
+														</div>
+														<div class="boxes effect3 seafoam">
+															Las funciones que se muestran a continuación están predefinidas en DrRacket y pueden ser utilizadas en cualquier parte del programa. 
+														</div>
+
+														<div class="hoja">Car y First </div>	
+														<div id="hoja2" class="hoja">Cdr y Rest </div>	
+														<div id="hoja3" class="hoja">Lenght</div>		                 
+														<div id="hoja4" class="hoja">Append</div>
+														<div id="hoja5" class="hoja">Reverse</div>	
+														<div id="hoja6" class="hoja">Member</div>
 
 
-								    </div>
-								    <div class='slide--content__pane'>
-								      <h2>
-								        <i></i>
-								        Funciones Car y First
-								      </h2>
-								      <p id="definicion1"><span>Ambas funciones realizan la misma acción, la cual consiste en retornar el primer elemento de una lista. Las sintaxis de <b>Car</b> y <b>First</b> es la siguiente:</span></p>
-								      <div id="cTexto1" class="boxTexto">
-  											<h4><span>(car lista)</span></h4>
-									  </div>
-									  <div id="cTexto2" class="boxTexto">
-  											<h4><span>(first lista)</span></h4>
-									  </div>
-									  <p id="ej1"><span><b>Ejemplo:</b> obtener el primer elemento de la lista colores-primarios definida de la siguiente manera:</span></p>
-									
-									    <div class="cajaTexto">
-									        <div class="cajaTexto-contenido">
-									            <div class="cajaTexto-text">
-									              (define colores-primarios ( cons "Rojo" ( cons "Amarillo" ( cons "Azul" empty) ) ) )
-									            
-									            </div>
-									        </div>
-									    </div>
-									  <img  id="imagen24" class="lightbox" src="ejemCdr.png" />
-									    <img id="imagen25" class="lightbox" src="CarFirst.png" />
-									<div class="containerMass">
-											<input type="checkbox" id="toggles" />
-											<label class="buttonMass" for="toggles"></label>
-											<nav class="nav2">
-												<br>
-												Al aplicar estas funciones a una lista vacía se genera error de ejecución, debido a que una lista vacía no posee elementos. 
-											</nav>
+													</div>
+													<div class='slide--content__pane'>
+														<h2>
+															<i></i>
+															Funciones Car y First
+														</h2>
+														<p id="definicion1"><span>Ambas funciones realizan la misma acción, la cual consiste en retornar el primer elemento de una lista. Las sintaxis de <b>Car</b> y <b>First</b> es la siguiente:</span></p>
+														<div id="cTexto1" class="boxTexto">
+															<h4><span>(car lista)</span></h4>
+														</div>
+														<div id="cTexto2" class="boxTexto">
+															<h4><span>(first lista)</span></h4>
+														</div>
+														<p id="ej1"><span><b>Ejemplo:</b> obtener el primer elemento de la lista colores-primarios definida de la siguiente manera:</span></p>
+
+														<div class="cajaTexto">
+															<div class="cajaTexto-contenido">
+																<div class="cajaTexto-text">
+																	(define colores-primarios ( cons "Rojo" ( cons "Amarillo" ( cons "Azul" empty) ) ) )
+
+																</div>
+															</div>
+														</div>
+														<img  id="imagen24" class="lightbox" src="ejemCdr.png" />
+														<img id="imagen25" class="lightbox" src="CarFirst.png" />
+														<div class="containerMass">
+															<input type="checkbox" id="toggles" />
+															<label class="buttonMass" for="toggles"></label>
+															<nav class="nav2">
+																<br>
+																Al aplicar estas funciones a una lista vacía se genera error de ejecución, debido a que una lista vacía no posee elementos. 
+															</nav>
+														</div>
+													</div>
+													<div class='slide--content__pane'>
+														<h2>
+															<i></i>
+															Funciones Cdr y Rest
+														</h2>
+														<p id="definicion2"><span><b>Cdr</b> y <b>Rest</b> se encargan de retornar el resto o cola de una lista, es decir que devuelven una sublista con los elementos de la lista original sin incluir el primer elemento. La sintaxis de estas funciones es la siguiente:</span></p>
+														<!-- Yellow -->
+														<div class="recuadro yellow">cdr lista</div>
+														<div class="recuadro1 yellow">rest lista</div>
+														<div class="wraps">
+															<div class="windows">
+																<div id="carousel">
+																	<span class="slides" id="b1"><div id="contentImg"><img id="imagen29" src="nota1.png" />
+																		<img id="imagen30" src="nota2.png" /></div>
+																	</span>
+																	<span class="slides" id="b2"><span id="texto1"><b>Ejemplo 1:</b> Realice un programa que cree una lista de países y de ella obtenga todos los países a excepción del primero.</span><div id="contentImg"><img id="imagen26" class="lightbox" src="esEjemplo2.png" />
+																		<img id="imagen27" class="lightbox" src="paises.png" /></div>
+																	</span>  
+																	<span class="slides" id="b3"><span id="texto2"><b>Ejemplo 2:</b> Defina una lista con dos elementos y de ella obtenga tanto el primero como el resto de la lista. </span><div id="contentImg">
+																		<img id="imagen28" class="lightbox" src="firstCdr.png" /></div></span>
+
+																	</div>
+																</div>
+																<span id="prev">PREV</span>
+																<span id="next">NEXT</span>
+															</div>
+
+
+														</div>
+													</div>
+												</div>
+
+											</div>
+											<!--PESTAÑA 7-->
+											<div class="panel" id="panel7">
+												<h1 class = "panelContent"></h1>
+												<p id="indicacion2" class = "panelContent"><span>Haz clic sobre las pestañas verticales para observar los ejemplos.</span></p>
+
+
+											</div>
+											<!--PESTAÑA 8-->
+											<div class="panel" id="panel8">
+												<h1 class = "panelContent"></h1>
+												<p id="indicacion2" class = "panelContent"><span>Haz clic sobre las pestañas verticales para observar los ejemplos.</span></p>
+											</div>
 										</div>
-						   			 </div>
-								    <div class='slide--content__pane'>
-								      <h2>
-								        <i></i>
-								        Funciones Cdr y Rest
-								      </h2>
-								      <p id="definicion2"><span><b>Cdr</b> y <b>Rest</b> se encargan de retornar el resto o cola de una lista, es decir que devuelven una sublista con los elementos de la lista original sin incluir el primer elemento. La sintaxis de estas funciones es la siguiente:</span></p>
-								      <!-- Yellow -->
-										<div class="recuadro yellow">cdr lista</div>
-										<div class="recuadro1 yellow">rest lista</div>
-										<div class="wraps">
-  <div class="windows">
-    <div id="carousel">
-      <span class="slides" id="b1"><div id="contentImg"><img id="imagen29" src="nota1.png" />
-      <img id="imagen30" src="nota2.png" /></div>
-      </span>
-      <span class="slides" id="b2"><span id="texto1"><b>Ejemplo 1:</b> Realice un programa que cree una lista de países y de ella obtenga todos los países a excepción del primero.</span><div id="contentImg"><img id="imagen26" class="lightbox" src="esEjemplo2.png" />
-      <img id="imagen27" class="lightbox" src="paises.png" /></div>
-      </span>  
-      <span class="slides" id="b3"><span id="texto2"><b>Ejemplo 2:</b> Defina una lista con dos elementos y de ella obtenga tanto el primero como el resto de la lista. </span><div id="contentImg">
-      <img id="imagen28" class="lightbox" src="firstCdr.png" /></div></span>
-      
-    </div>
-  </div>
-  <span id="prev">PREV</span>
-  <span id="next">NEXT</span>
-</div>
-
-
-								    </div>
-								  </div>
+									</div>
 								</div>
-											
-							</div>
-							<!--PESTAÑA 7-->
-							<div class="panel" id="panel7">
-								<h1 class = "panelContent"></h1>
-								<p id="indicacion2" class = "panelContent"><span>Haz clic sobre las pestañas verticales para observar los ejemplos.</span></p>
+								<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+								<script src='https://raw.githubusercontent.com/WickyNilliams/enquire.js/master/dist/enquire.min.js'></script>
+								<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+								<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+								<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+								<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+								<script src='https://code.jquery.com/jquery-2.0.3.min.js'></script>
+								<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 
-											
-							</div>
-							<!--PESTAÑA 8-->
-							<div class="panel" id="panel8">
-								<h1 class = "panelContent"></h1>
-								<p id="indicacion2" class = "panelContent"><span>Haz clic sobre las pestañas verticales para observar los ejemplos.</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-				<script src='https://raw.githubusercontent.com/WickyNilliams/enquire.js/master/dist/enquire.min.js'></script>
-				<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-				<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-				<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-				 <script src='https://code.jquery.com/jquery-2.0.3.min.js'></script>
-				 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-
-				<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
-				<script src='https://tipso.object505.com/tipso.js'></script>
+								<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
+								<script src='https://tipso.object505.com/tipso.js'></script>
 
 
 
-				<script src="lightbox.js"></script>
-				<script  src="tema1.js"></script>
-				<script  src="pestaña2.js"></script>
-				<script  src="boton.js"></script>
-				<script  src="IndexPestaña4.js"></script>
-			</body>
-			</html>
+								<script src="lightbox.js"></script>
+								<script  src="tema1.js"></script>
+								<script  src="pestaña2.js"></script>
+								<script  src="boton.js"></script>
+								<script  src="IndexPestaña4.js"></script>
+							</body>
+							</html>

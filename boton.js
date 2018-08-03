@@ -17,6 +17,25 @@ function simulator_FB_close (){
 
 }
 
+var outButton = document.querySelector('.click4'),
+    pop = document.getElementById('click_button4');
+var main = document.getElementById("window4");
+var shadow = document.querySelector("body");
+var hide = document.getElementById("close4");
+
+function simulator_FB (){
+  "use strict"
+  main.style.display = "block";
+  shadow.style.backgroundColor = "rgba(0, 0, 0, 0.38)"
+}
+
+function simulator_FB_close (){
+  "use strict"
+  main.style.display = "none";
+   shadow.style.backgroundColor = "#FFF"
+
+}
+
 /* LIGHTBOX */
 
 $(document).ready(function () {
