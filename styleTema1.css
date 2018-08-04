@@ -3495,7 +3495,7 @@ left: 855px;
   -moz-border-radius: 10px 0;
   border-radius: 10px 0;
   margin-right: 20px; 
-  width: 100px;
+  width: 110px;
   margin: 75px 155px;
   border-style: outset; border-width: 1px;
   font-size: 18px;
@@ -3511,8 +3511,8 @@ left: 855px;
   -moz-border-radius: 10px 0;
   border-radius: 10px 0;
   margin-right: 20px; 
-  width: 100px;
-  margin: -109px 400px;
+  width: 110px;
+  margin: -112px 400px;
   border-style: outset; border-width: 1px;
   font-size: 18px;
 }
@@ -3668,5 +3668,185 @@ margin-top: 10px;
     transform: translateY(10px);
     box-shadow: 0 40px 10px -18px hsla(0,0%,0%,.2),
               0 40px 16px -12px hsla(0,0%,0%,.2);
+  }
+}
+
+/*PESTAÑA 6 - STEP 4*/
+.box-shadow {
+  width: 130px;
+  height: 40px;
+  background-color: #22c0e8;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 65px auto;
+  color: #000000;
+  font-family: Open Sans;
+  font-size: 18px;
+  text-align: center;
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  -webkit-animation: shadow-anim 2s infinite;
+          animation: shadow-anim 2s infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  font-weight: bold;
+}
+
+@-webkit-keyframes shadow-anim {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+@keyframes shadow-anim {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+#ej2 {
+  
+  font-family: 'Open Sans';
+  font-size: 18px;
+  margin: 150px 28px;
+  text-align: justify;
+  width: 320px;
+}
+
+#ej2 span {
+   font-style: normal;
+}
+
+#imagen34 {
+  height: 190px;
+width: 230px;
+margin: 148px -150px;
+ animation-duration: 2.5s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+}
+
+/* ANIMACION DE LA IMAGEN 34*/
+
+
+@keyframes bounce {
+  from,
+  to {
+    animation-timing-function: cubic-bezier(.7,-0.61,.31,1.17); 
+  }
+  
+  0% {
+    transform: scale(1);
+  }
+  
+  50% {
+    transform: scale(1.2);
+  }
+  
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+a.indicacion3 {
+  position: relative;
+  display: inline-block;
+  width: 25.6em;
+  height: 6.3em;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: left;
+  text-decoration: none;
+  line-height: 3em;
+  font-size: 1rem;
+  color: #000000;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  margin: 40px 130px;
+}
+a.indicacion3 svg {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+a.indicacion3 svg g line,
+a.indicacion3 svg g polyline,
+a.indicacion3 svg g circle {
+  fill: none;
+  stroke: #FF4000;
+}
+a.indicacion3 svg g line,
+a.indicacion3 svg g polyline {
+  stroke-miterlimit: 10;
+}
+a.indicacion3 svg g circle {
+  display: block;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 0.066em;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset ease-out 0.5s;
+}
+a.indicacion3 font {
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  font-family: "sansita";
+  font-size: 1.3em;
+  top: -8px;
+  left: 27px;
+}
+a.indicacion3:hover {
+  -webkit-transform: translateZ(0) translateX(0.5em);
+          transform: translateZ(0) translateX(0.5em);
+}
+a.indicacion3:hover svg g circle {
+  stroke-dashoffset: 200;
+}
+
+
+/*STEP 5*/
+
+#imagen35 {
+  height: 190px;
+width: 230px;
+margin: 148px -150px;
+ animation-duration: 2.5s;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes spin {
+  from,
+  to {
+    animation-timing-function: cubic-bezier(.7,-0.61,.31,1.17); 
+  }
+  
+  0% {
+    transform: rotate(0);
+  }
+  
+  50%, 
+  100% {
+    transform: rotate(360deg);
   }
 }
