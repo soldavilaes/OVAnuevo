@@ -3672,7 +3672,7 @@ margin-top: 10px;
 }
 
 /*PESTAÑA 6 - STEP 4*/
-.box-shadow {
+.cTexto {
   width: 130px;
   height: 40px;
   background-color: #22c0e8;
@@ -3825,17 +3825,173 @@ a.indicacion3:hover svg g circle {
 
 /*STEP 5*/
 
+/* INDICACION 4*/
+.rarrow{
+  position:relative;
+  height:0px;
+  width:100px;
+  border-top: 50px solid #0066CC;
+  border-right: 50px solid #0066CC;
+  border-bottom: 50px solid #0066CC;
+  border-left: 50px solid transparent;
+}
+.rarrow:before{
+  content: "";
+  display: block;
+  border-top: 50px solid transparent;
+  border-right: 0px;
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid #0066CC;
+  position: relative;
+  bottom: 50px;
+  left: -60px;
+}
+.rarrow:after{
+  content: "";
+  display: inline-block;
+  border-top: 50px solid transparent;
+  border-right: 0px;
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid #0066CC;
+  position: absolute;
+  top: -50px;
+  left:150px;
+}
+.rarrow span{
+  color: #fff;
+  z-index: 1;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  top: -0.6em;
+  left: 22px;
+  width: 150px;
+  text-shadow: 0px 0px 20px #ffffff;
+  filter: dropshadow(color=#ffffff, offx=0, offy=0);
+}
+
+
 #imagen35 {
   height: 190px;
 width: 230px;
 margin: 148px -150px;
- animation-duration: 2.5s;
-  animation-name: spin;
-  animation-iteration-count: infinite;
+  animation: ascendente 0.5s infinite ease-in-out alternate;
+}
+
+.marco {
+   box-shadow: 20px 20px 0 -10px #FFBF00, 
+   -20px -20px 0 -10px #FFBF00, 
+   0 0 0 10px #848484;
+}
+
+.fondo {
+     width: 220px;
+    height: 35px;
+    margin: 70px 225px;
+    padding: 1px;
+    float: left;
+    font-family: Open Sans;
+    text-align: center;
+    background: white;
+    font-size: 19px;
+    font-weight: bold;
+    color: #000000;
 }
 
 
-@keyframes spin {
+#ej3 {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  margin: 150px 28px;
+  text-align: justify;
+  width: 365px;
+}
+
+#ej3 span {
+   font-style: normal;
+}
+
+/* FECHA */
+.loading-frame {
+  position: absolute;
+  top: 67%;
+  left: 45%;
+}
+ #palabra {
+  margin-top: 240px;
+  margin-left: 80px;
+  font-family: "sansita";
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+ }
+
+.circle {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  background-color: #FF0000;
+  animation: animate linear 2s infinite;
+}
+.circle:nth-child(1) {
+  animation-delay: 0.9s;
+}
+.circle:nth-child(2) {
+  animation-delay: 1.1s;
+  transform: translate(18px, 13px);
+}
+.circle:nth-child(3) {
+  animation-delay: 1.3s;
+  transform: translate(35px, 25px);
+}
+.circle:nth-child(4) {
+  animation-delay: 1.1s;
+  transform: translate(18px, 38px);
+}
+.circle:nth-child(5) {
+  animation-delay: 0.9s;
+  transform: translate(0px, 50px);
+}
+.circle:nth-child(6) {
+  animation-delay: 0.9s;
+  transform: translate(0, 25px);
+}
+.circle:nth-child(7) {
+  animation-delay: 0.7s;
+  transform: translate(-20px, 25px);
+}
+.circle:nth-child(8) {
+  animation-delay: 0.5s;
+  transform: translate(-40px, 25px);
+}
+.circle:nth-child(9) {
+  animation-delay: 0.3s;
+  transform: translate(-60px, 25px);
+}
+.circle:nth-child(10) {
+  animation-delay: 0.1s;
+  transform: translate(-80px, 25px);
+}
+
+
+
+@keyframes animate {
+  0%,
+  100% {
+    background-color: #FF0000;
+  }
+  50% {
+    background-color: #fff;
+  }
+}
+ 
+/* PESTAÑA 6 - STEP 6*/
+
+
+
+ @keyframes spin {
   from,
   to {
     animation-timing-function: cubic-bezier(.7,-0.61,.31,1.17); 
@@ -3849,4 +4005,10 @@ margin: 148px -150px;
   100% {
     transform: rotate(360deg);
   }
-}
+  }
+
+
+
+
+
+
