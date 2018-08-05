@@ -2409,6 +2409,7 @@ text-decoration: none;
 
 /*PESTAÑA 4*/
 
+
 [ripple] {
   z-index: 1;
   position: relative;
@@ -2464,6 +2465,7 @@ top: -470px;
 width: 900px;
 border-radius: 0 10px 10px 10px;
 border: 4px solid #ffcc00;
+color: #17202A;
 
 }
 .tabsP4-header {
@@ -2636,6 +2638,7 @@ a {
   padding:0 5px;
   font-size:20px; 
   background: #ffff;
+  color:#17202A;
 }
 
 .boxesP4{
@@ -2648,16 +2651,17 @@ height: 380px;
 width: 600px;
 left: 110px;
 text-align: justify;
+color:#17202A;
 
 }
 
-#imagen31{
+#muñeca{
   margin: 25px -555px;
 }
-#imagen33{
+#ejm4{
   margin: 55px -290px;
 }
-#imagen32{
+#nube{
   margin: 5px 170px;
 }
 
@@ -2666,86 +2670,191 @@ text-align: justify;
 
 }
 
-.botonPestaña4 {
-width: 850px;
+.botonPestaña4{
+  width: 850px;
 height: 360px;
 top: -445px;
-
 }
 
-.click4{
-  
-  text-align:center;
-top: 190px;
-left: -45px;
-
-}
-
-
-#window4
-{
-
-width: 980px;
-height: 470px;
-background: rgba(0,0,0,.8);
-opacity: 15px;
-position: relative;
-text-align: center;
-border-radius: 10px;
-display: none;
-left: -50px;
-
-}
-
-#window4 p{
-
-font-family: 'Open Sans', sans-serif;
-font-style: normal;
-font-size: 12px;
-line-height: 1;
-background: #FFFF;
-left: 140px;
-top: 0px;
-width: 300px;
-height: 132px;
-text-indent: 5px;
-text-align: justify;
-margin: 15px 0 0;
-padding: 0 10px 15px;
-border-radius: 10px;
-
-}
-#close4{
-position: absolute;
-top: 5px;
-right: 0px;
-cursor: pointer;
-background-color: #f00;
-font-family: 'Open Sans', sans-serif;
-color: #FFF;
-font-size: 17px;
-left: 855px;
-}
-
-#botonPestaña4 button{
- 
-  text-align:center;
-  width:40px;
+.pop-up-button {
   border:none;
   height:40px;
-  font-family:'Open Sans', sans-serif;
-  font-size:17px;
-  float: right;
+  width:40px;
+  font-family:'Open Sans';
+  font-size:15px;
   background-color: #FFC145;
   cursor: pointer;
   z-index: 999;
  border-radius: 80%;
- left: -45px;
+ margin: 150px 765px;
 
-   
+
 }
-#click_button4:hover {
-    background: #CFE1F4;
+.pop-up-button p{
+font-style: normal;
+
+}
+.pop-up-button:hover{
+  background:#dfdfdf;
+}
+.pop-up-text {
+  box-sizing:border-box;
+  padding:20px;  
+  z-index: 999;
+margin: -40px auto;
+height: 350px;
+}
+.pop-up {
+ left: -50px;
+width: 985px;
+height: 475px;
+opacity: 15px;
+background: rgba(0,0,0,.8);
+position: relative;
+text-align: center;
+border-radius: 10px;
+display: none;
+z-index: 1;
+}
+
+.closeP4 {
+left: 385px;
+width: 985px;
+height: 75px;
+z-index: 1;
+top: 15px;
+
+}
+.botonPestaña4 p{
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+}
+
+.botonPestaña4 span {
+  border-radius:0 0 30px 30px;
+  margin-left:90%;
+  background:red;
+  color:#fff;
+  font-size:20px;
+  height:10px;
+  padding:0 5px;
+  cursor:pointer;
+  margin:195px 20px;
+
+}
+
+.pop-up-container{
+  height:700px;
+  width:100%;
+  opacity:.5;
+  position:relative;
+  z-index:-1;
+  margin-top:-450px;
+
+}
+
+.boxesPe4{
+top: -15px;
+position: relative;
+padding: 15px 20px;
+overflow: hidden;
+background: #FFFFFF;
+height: 350px;
+width: 900px;
+left: -20px;
+text-align: justify;
+color: #17202A;
+z-index: 1;
+font-size:18px;
+}
+
+.ejemP4{
+ text-align: center;
+    margin: 35px 230px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #E6E6FA;
+    border: solid 1px red;
+    color: #000000;
+    height: 35px;
+    top: -295px;
+    width: 400px;
+    height: 55px;
+    box-shadow: 0 0.25em 0.25em -0.125em rgba(0, 0, 0, 0.25), 0 0.5em 1.25em rgba(0, 0, 0, 0.5);
+}
+
+#consConsP4{
+  margin: 55px -410px;
+}
+
+@-moz-keyframes purple {
+  0%, 100% {
+    -moz-box-shadow: 1px 0px 19px 4px #c56967, inset 0px 0px 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 0px 19px 4px #c56967, inset 0px 0px 10px rgba(255, 255, 255, 0.5); }
+
+  50% {
+    -moz-box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0); } }
+
+@-webkit-keyframes purple {
+  0%, 100% {
+    -webkit-box-shadow: 1px 0px 19px 4px #c56967, inset 0px 0px 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 0px 19px 4px #5B2C6F, inset 0px 0px 10px rgba(255, 255, 255, 0.5); }
+
+  50% {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0); } }
+
+@-o-keyframes purple {
+  0%, 100% {
+    box-shadow: 1px 0px 19px 4px #c56967, inset 0px 0px 10px rgba(255, 255, 255, 0.5); }
+
+  50% {
+    box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0); } }
+
+@keyframes purple {
+  0%, 100% {
+    box-shadow: 1px 0px 19px 4px #c56967, inset 0px 0px 10px rgba(255, 255, 255, 0.5); }
+
+  50% {
+    box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0); } }
+
+.purpura {
+  text-shadow: 0px 1px 0px #fbcdcc;
+  background-image: -webkit-linear-gradient(top, #f9a8a6, #f78481);
+  background-image: -moz-linear-gradient(top, #f9a8a6, #f78481);
+  background-image: -o-linear-gradient(top, #f9a8a6, #f78481);
+  background-image: linear-gradient(to bottom, #f9a8a6, #f78481);
+  -webkit-animation: purple 1s infinite;
+  -moz-animation: purple 1s infinite;
+  -o-animation: purple 1s infinite;
+  animation: purple 1s infinite; }
+
+.recuadro3 {
+  top: -55px;
+  text-align: center;
+  padding: 4px 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px 0;
+  border-radius: 10px 0;
+  width: 510px;
+  height: 40px;
+  margin: 75px 10px;
+  border-style: outset; border-width: 1px;
+  font-size: 20px;
+}
+#muñecaRosa{
+margin: 60px 17px;
+}
+
+#ejemRacketP4{
+   height: 190px;
+   width: 350px;
+  margin: 130px -460px;
+  animation: float 1s infinite ease-in-out alternate;
 }
 
 /* PESTAÑA 6*/

@@ -16,25 +16,21 @@ function simulator_FB_close (){
    shadow.style.backgroundColor = "#FFF"
 
 }
+/* Boton pestaña 4 step 2 */
+$('.pop-up').hide(0);
+$('.pop-up-container').hide(0);
 
-var outButton = document.querySelector('.click4'),
-    pop = document.getElementById('click_button4');
-var main = document.getElementById("window4");
-var shadow = document.querySelector("body");
-var hide = document.getElementById("close4");
+$('.pop-up-button').click(function(){
+  $('.pop-up-container').show(0);
+  $('.pop-up').fadeIn(300);
+  $('.pop-up-button').hide(0);
+});
+$('.pop-up span').click(function() {
+  $('.pop-up-container').hide(0);
+  $('.pop-up').hide(0);
+  $('.pop-up-button').show(0);
+});
 
-function simulator_FB (){
-  "use strict"
-  main.style.display = "block";
-  shadow.style.backgroundColor = "rgba(0, 0, 0, 0.38)"
-}
-
-function simulator_FB_close (){
-  "use strict"
-  main.style.display = "none";
-   shadow.style.backgroundColor = "#FFF"
-
-}
 
 /* LIGHTBOX */
 

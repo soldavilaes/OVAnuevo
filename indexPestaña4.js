@@ -148,4 +148,27 @@ $(document).ready(function () {
       rippleDiv.remove();
     }, 1500);
   });
+
+var vue = new Vue({
+  el: '#app',
+  data: {
+    formOpen: false,
+    productData: {
+      is_featured: false
+    }
+  },
+  methods: {
+    resetForm: function () {
+      this.productData = {
+        is_featured: false
+      }
+    },
+    cancel: function() {
+      this.formOpen = false;
+      this.resetForm();
+    }
+  }
+})
+
+  
 });
