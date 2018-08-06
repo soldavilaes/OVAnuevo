@@ -4199,7 +4199,7 @@ margin: 212px -190px;
   width: 40px;
   height: 40px;
   top: 50%;
-  margin: 80px 0px 0 -90px;
+  margin: 80px 0px 0 -70px;
   -webkit-transform: rotate(-45deg);
   border-left: none;
   border-top: none;
@@ -4336,6 +4336,122 @@ margin: 212px -190px;
 animation: float 1s infinite ease-in-out alternate;
 }
 
+/* PESTAÑA 6 - STEP 8*/
+
+.i20 {
+    border: 2px dashed #01DFA5;
+box-shadow: 0 0 0 1px #01DFA5, 
+          inset 0 0 0 1px #01DFA5, 
+          -30px -30px 0 -25px #01DFA5, 
+          30px -30px 0 -25px #01DFA5, 
+          -30px 30px 0 -25px #01DFA5, 
+          30px 30px 0 -25px #01DFA5;
+}
+
+#caja6 {
+ width: 202px;
+height: 280px;
+margin: 27px 10px;
+padding: 13px;
+float: left;
+font-family: 'Open Sans';
+text-align: justify;
+background: white;
+font-size: 16px;
+line-height: 1;
+color: #000000;
+
+}
+
+#caja6 span {
+  font-weight: bold;
+  color: #DF3A01;
+  text-align: center;
+}
+
+#imagen38 {
+height: 130px;
+width: 178px;
+margin: 110px -545px;
+ animation: wiggle 3s linear infinite;
+}
+
+.i21 {
+    border: 2px dashed #DBA901;
+box-shadow: 0 0 0 1px #DBA901, 
+          inset 0 0 0 1px #DBA901, 
+          -30px -30px 0 -25px #DBA901, 
+          30px -30px 0 -25px #DBA901, 
+          -30px 30px 0 -25px #DBA901, 
+          30px 30px 0 -25px #DBA901;
+}
+
+#caja7 {
+ width: 202px;
+height: 280px;
+margin: 27px 10px;
+padding: 13px;
+float: left;
+text-align: center;
+background: white;
+font-family: 'Open Sans';
+text-align: justify;
+background: white;
+font-size: 16px;
+line-height: 1;
+color: #000000;
+}
+
+#caja7 span {
+  font-weight: bold;
+  color: #DF3A01;
+  text-align: center;
+}
+#imagen39 {
+height: 130px;
+width: 178px;
+margin: 110px -545px;
+ animation: wiggle 3s linear infinite;
+}
+
+.i22 {
+    border: 2px dashed #01DFD7;
+box-shadow: 0 0 0 1px #01DFD7, 
+          inset 0 0 0 1px #01DFD7, 
+          -30px -30px 0 -25px #01DFD7, 
+          30px -30px 0 -25px #01DFD7, 
+          -30px 30px 0 -25px #01DFD7, 
+          30px 30px 0 -25px #01DFD7;
+}
+
+#caja8 {
+ width: 204px;
+height: 280px;
+margin: 27px 10px;
+padding: 13px;
+float: left;
+text-align: center;
+background: white;
+font-family: 'Open Sans';
+text-align: justify;
+background: white;
+font-size: 16px;
+line-height: 1;
+color: #000000;
+}
+
+#caja8 span {
+  font-weight: bold;
+  color: #DF3A01;
+  text-align: center;
+}
+
+#imagen40 {
+height: 130px;
+width: 178px;
+margin: 110px -545px;
+ animation: wiggle 3s linear infinite;
+}
 
  @keyframes spin {
   from,
