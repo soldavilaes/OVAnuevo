@@ -2850,10 +2850,192 @@ font-size:18px;
 margin: 60px 17px;
 }
 
+#muñecaAmarilla{
+	margin: 80px -420px;
+}
+
 #ejemRacketP4{
    height: 190px;
    width: 350px;
+  margin: 130px -440px;
+  animation: float 1s infinite ease-in-out alternate;
+}
+
+.boxesPes4{
+top: -15px;
+position: relative;
+padding: 15px 20px;
+overflow: hidden;
+background: #FFFFFF;
+height: 350px;
+width: 900px;
+text-align: justify;
+color: #17202A;
+z-index: 1;
+font-size:15px;
+left: -21px;
+text-align: justify all;
+}
+
+.cards {
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+  max-width: 34em;
+  margin: 20% auto 0;
+  top:-80px;
+}
+.card {
+ margin: 0 -110px;
+  width: 700px;
+  position: absolute;
+  left: 0;
+  top: -20px;
+  z-index: 2;
+  background:#A3E4D7;
+  border-radius: 30px;
+  padding: 50px;
+  box-shadow: 0 0 40px #000;
+  -webkit-transform: translateY(0) rotate(4deg) translateX(25px) scale(1);
+          transform: translateY(0) rotate(4deg) translateX(25px) scale(1);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  transition: background 0.4s linear, -webkit-transform 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8) 0.1s;
+  transition: transform 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8) 0.1s, background 0.4s linear;
+  transition: transform 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8) 0.1s, background 0.4s linear, -webkit-transform 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8) 0.1s;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 16px;
+}
+.card :last-child {
+  margin-bottom: 0;
+}
+.card--next {
+  z-index: 5;
+  -webkit-transform: translateY(-25px) rotate(4deg) translateX(25px) scale(1);
+          transform: translateY(-25px) rotate(4deg) translateX(25px) scale(1);
+}
+.card--out {
+  -webkit-animation: card-out 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8);
+          animation: card-out 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8);
+  -webkit-transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+          transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+  z-index: 1;
+  background: #48C9B0;
+}
+@-webkit-keyframes card-out {
+  0% {
+    z-index: 20;
+    -webkit-transform: translateY(0px) rotate(-4deg);
+            transform: translateY(0px) rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: translateY(-120%) rotate(-5deg) translateX(-40px);
+            transform: translateY(-120%) rotate(-5deg) translateX(-40px);
+  }
+  80% {
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+            transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+  }
+}
+@keyframes card-out {
+  0% {
+    z-index: 20;
+    -webkit-transform: translateY(0px) rotate(-4deg);
+            transform: translateY(0px) rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: translateY(-120%) rotate(-5deg) translateX(-40px);
+            transform: translateY(-120%) rotate(-5deg) translateX(-40px);
+  }
+  80% {
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+            transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+  }
+}
+.card--current {
+  cursor: auto;
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  background: #D1F2EB;
+  -webkit-transform: rotate(-1deg) translateX(0%) scale(1);
+          transform: rotate(-1deg) translateX(0%) scale(1);
+}
+.boxesPes4 h1 {
+  font-size:12px;
+  
+  margin: 0;
+}
+
+#mercury{
+	margin: -10px -480px;
+
+}
+
+#mercury2{
+	margin: -10px -480px;
+
+}
+
+#mercury3{
+	margin: -10px -480px;
+
+}
+
+.boxes4 {
+  margin:5px 28px;
+  width:800px;
+  height:100px;
+  background:-webkit-linear-gradient(left, #a3e4d7 0%,#ffffff 42%,#ffffff 52%,#e2e1e0 100%);
+  font-size: 14px;
+  font-family: 'Open Sans';
+  color: #000000;
+  text-align: justify all;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border-radius-right:10px;
+}
+
+.boxes5 {
+top: -15px;
+position: relative;
+padding: 15px 20px;
+overflow: hidden;
+background: #FFFFFF;
+height: 350px;
+width: 900px;
+left: -20px;
+text-align: justify;
+color: #17202A;
+z-index: 1;
+font-size:18px;
+}
+
+#steep5{
+   height: 190px;
+   width: 350px;
   margin: 130px -460px;
+  animation: float 1s infinite ease-in-out alternate;
+}
+
+#step5P4{
+  height: 235px;
+  width: 400px;
+  margin: 90px -220px;
   animation: float 1s infinite ease-in-out alternate;
 }
 
