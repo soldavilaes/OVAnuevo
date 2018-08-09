@@ -2854,6 +2854,10 @@ margin: 60px 17px;
 	margin: 80px -420px;
 }
 
+#muñecaAzul{
+	margin: 110px -450px;
+}
+
 #ejemRacketP4{
    height: 190px;
    width: 350px;
@@ -3037,6 +3041,66 @@ font-size:18px;
   width: 400px;
   margin: 90px -220px;
   animation: float 1s infinite ease-in-out alternate;
+}
+
+#estep6P4{
+  height: 200px;
+width: 400px;
+margin: 120px -150px;
+  animation: float 1s infinite ease-in-out alternate;
+}
+
+.boxes6 {
+top: -15px;
+position: relative;
+padding: 15px 20px;
+overflow: hidden;
+background: #FFFFFF;
+height: 350px;
+width: 900px;
+left: -20px;
+text-align: justify;
+color: #17202A;
+z-index: 1;
+font-size:18px;
+}
+
+.cajaTextoP4 {
+    position: absolute;
+    width:500px;
+    padding: 4px;
+    box-sizing: border-box;
+    border-radius: 20px 20px 20px 20px;
+    transform-style: preserve-3d;
+    background: -webkit-linear-gradient(top left, #e74c3c 50%, #e74c3c 50%);
+    background:    -moz-linear-gradient(top left, #e74c3c 50%, #e74c3c 50%);
+    background:     -ms-linear-gradient(top left, #e74c3c 50%, #e74c3c 50%);
+    background:      -o-linear-gradient(top left, #e74c3c 50%, #e74c3c 50%);
+    background:         linear-gradient(top left, #e74c3c 50%, #e74c3c 50%);
+    margin: 18px 155px;
+    box-shadow: 0 0 10px #451612;
+}
+
+.cajaTexto-contenidoP4 {
+    background: #64DCFF;
+    padding: 6px;
+    border-radius: 10px 10px 10px 10px;
+    height: 35px;
+}
+.cajaTexto-textP4 {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    top: -5px;
+    height: 35px;
+}
+.cajaTexto-textP4 b {
+    color: coral;
+    font-weight: 300;
 }
 
 /* PESTAÑA 6*/
