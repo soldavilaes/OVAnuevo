@@ -150,3 +150,44 @@ function shiftSlide(direction) {
     carousel.css('transform','translateX(0px)'); 
   },700)
 }
+
+/*CARRUSEL PESTAÑA 8*/
+var carousels = document.querySelector('.carousels');
+var containerC = carousels.querySelector('.carousels-container');
+var prevBtn = carousels.querySelector('.carousels-prevs');
+var nextBtn = carousels.querySelector('.carousels-nexts');
+var pagination = carousels.querySelector('.carousels-pagination');
+var bullets = [].slice.call(carousels.querySelectorAll('.carousels-bullet'));
+var totalItems = containerC.querySelectorAll('.carousels-item').length;
+var percent = (100 / totalItems);
+var currentIndex = 0;
+
+function nexts() {
+    slideTo(currentIndex + 1);
+}
+
+function prevs() {
+    slideTo(currentIndex - 1);
+}
+
+function slideTo(index) {
+    index = index < 0 ? totalItems - 1 : index >= totalItems ? 0 : index;
+    containerC.style.WebkitTransform = containerC.style.transform = 'translate(-' + (index * percent) + '%, 0)';
+    bullets[currentIndex].classList.remove('active-bullet');
+    bullets[index].classList.add('active-bullet');
+    currentIndex = index;
+}
+
+bullets[currentIndex].classList.add('active-bullet');
+prevBtn.addEventListener('click', prevs, false);
+nextBtn.addEventListener('click', nexts, false);
+
+pagination.addEventListener('click', function(e) {
+    var index = bullets.indexOf(e.target);
+    if (index !== -1 && index !== currentIndex) {
+        slideTo(index);
+    }
+}, false);
+
+/* VIDEO */
+

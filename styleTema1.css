@@ -4715,8 +4715,170 @@ margin: 110px -545px;
   }
   }
 
+/*PESTANA 8 - CARRUSEL*/
 
+.containerC {
+    width: 907px;
+margin-top: -405px;
+margin-left: 3px;
+}
 
+.carousels-item > div {
+    height: 400px;
+    line-height: 500px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+}
 
+.item-1 {
+   background: linear-gradient(to right, #33ccff 0%, #ccffff 100%);
+width: 901px;
+border-radius: 5px 5px 5px 5px;
+}
 
+.item-1 iframe {
+  margin: 25px;
+}
 
+.item-2 {
+    background-color: #B22222;
+left: -9px;
+width: 907px;
+border-radius: 5px 5px 5px 5px;
+}
+
+.item-3 {
+    background-color: #006400;
+left: -9px;
+width: 907px;
+border-radius: 5px 5px 5px 5px;
+}
+
+.item-4 {
+    background-color: #FFD700;
+left: -9px;
+width: 907px;
+border-radius: 5px 5px 5px 5px;
+}
+
+.item-5 {
+    background-color: #FF4500;
+left: -9px;
+width: 907px;
+border-radius: 5px 5px 5px 5px;
+}
+
+/* Carousel */
+
+.carousels {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousels-container {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 500%;
+    transition: transform 0.3s cubic-bezier(.694, .0482, .335, 1);
+}
+
+.carousels-item {
+    position: relative;
+    float: left;
+    width: 20%;
+}
+
+/* Next / Prev Buttons */
+
+.carousels-prevs,
+.carousels-nexts {
+    position: absolute;
+    top: 50%;
+    background-color: #222;
+    opacity: 0.7;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+}
+
+.carousels-prevs {
+    left: 2%;
+    padding-right: 3px;
+}
+
+.carousels-prevs::before {
+    content: '\f053';
+    font-family: "FontAwesome";
+}
+
+.carousels-nexts {
+    right: 2%;
+    padding-left: 3px;
+}
+
+.carousels-nexts::before {
+    content: '\f054';
+    font-family: "FontAwesome";
+}
+
+.carousels-prevs:hover,
+.carousels-nexts:hover {
+    opacity: 1;
+}
+
+/* Pagination */
+
+.carousels-pagination {
+    list-style: none;
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    right: 0;
+    width: 50%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousels-bullet {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    cursor: pointer;
+    margin: 0 7px;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition-property: transform, opacity, background-color;
+    transition-duration: 0.3s;
+}
+
+.carousels-bullet:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.carousels-bullet.active-bullet, 
+.carousels-bullet.active-bullet:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    background-color: #fff;
+    cursor: default;
+}
+
+/* VIDEO */
