@@ -802,6 +802,10 @@ height: 460px;
 height: 460px;
 }
 
+#panel7{
+height: 460px;
+}
+
 h1.panelContent {
   font-size: 2.2rem;
   
@@ -4881,4 +4885,175 @@ border-radius: 5px 5px 5px 5px;
     cursor: default;
 }
 
-/* VIDEO */
+/* PESTAÑA 7 */
+
+.conP7{
+  top: -445px;
+  height: 500px;
+
+}
+a.link {
+  color: #4477CC;
+  -webkit-transition: all 150ms ease 0s;
+  transition: all 150ms ease 0s;
+}
+
+a.link:hover {
+  color: #e08f24;
+}
+
+.content-1 {
+margin: -50px -65px;
+text-align: justify;
+color: #000000;
+font-size:15px;
+width: 900px;
+font-family: open Sans;
+
+}
+
+.tabsP7 {
+  position: relative;
+  margin: 40px auto;
+  width: 900px;
+  overflow: hidden;
+  padding-top: 10px;
+  margin-bottom: 60px;
+}
+
+.tabsP7 input {
+  position: absolute;
+  z-index: 1000;
+  width: 25%;
+  height: 50px;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  cursor: pointer;
+  margin: 0;
+}
+
+.tabsP7 input#tab-2 {
+  left: 25%;
+}
+
+.tabsP7 input#tab-3 {
+  left: 50%;
+}
+
+.tabsP7 input#tab-4 {
+  left: 75%;
+}
+
+.tabsP7 label {
+  background: #0095b6;
+  color: #fefefe;
+  font-size: 15px;
+  line-height: 30px;
+  height: 30px;
+  position: relative;
+  top: 0;
+  padding: 0 20px;
+  float: left;
+  display: block;
+  width: 25%;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1), -2px 0 2px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  -webkit-transition: all 150ms ease 0s;
+  transition: all 150ms ease 0s;
+}
+
+.tabsP7 label:hover {
+  cursor: pointer;
+}
+
+.tabsP7 label:after {
+  content: '';
+  background: #fefefe;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 900px;
+  height: 2px;
+  display: block;
+}
+
+.tabsP7 input:hover + label {
+  background: #FF6600;
+  /*e08f24*/
+}
+
+.tabsP7 label:first-of-type {
+  z-index: 4;
+}
+
+.tab-label-2 {
+  z-index: 4;
+}
+
+.tab-label-3 {
+  z-index: 3;
+}
+
+.tab-label-4 {
+  z-index: 2;
+}
+
+.tabsP7 input:checked + label {
+  background: #fefefe;
+  color: #1a1a1a;
+  z-index: 6;
+}
+
+.contentP7 {
+  height: auto;
+  width: 900px;
+  float: left;
+  position: relative;
+  z-index: 5;
+  background: #fefefe;
+  top: -10px;
+  box-sizing: border-box;
+
+
+}
+
+.contentP7 div {
+  position: relative;
+  float: left;
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+  top: 0;
+  z-index: 1;
+  opacity: 0;
+  background: #fefefe;
+
+
+}
+
+
+.tabsP7 .tab-selector-1:checked ~ .contentP7 .content-1,
+.tabsP7 .tab-selector-2:checked ~ .contentP7 .content-2,
+.tabsP7 .tab-selector-3:checked ~ .contentP7 .content-3,
+.tabsP7 .tab-selector-4:checked ~ .contentP7 .content-4 {
+  z-index: 100;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  width: 1025px;
+  height: auto;
+  width: 1025px;
+  height: 500px;
+  padding: 8%;
+
+}
+
+#preguntaP7{
+  margin: 50px 255px;
+}
