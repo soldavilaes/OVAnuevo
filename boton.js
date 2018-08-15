@@ -189,5 +189,34 @@ pagination.addEventListener('click', function(e) {
     }
 }, false);
 
-/* VIDEO */
+/* PESTAÑA 8 - CASOS */
+$(".circle1").mouseover(function(){
+  $(this).addClass("glow");
+  $(".arrow1").addClass("glow-arrow");
+});
+
+$(".circle1").mouseleave(function(){
+  $(this).removeClass("glow");
+  $(".arrow1").removeClass("glow-arrow");
+});
+
+$(".circle1").click(function(){
+  $(".dropdown").slideToggle();
+  $(".item1s").toggleClass("reflect");
+});
+
+$(".circle2").mouseover(function(){
+  $(this).addClass("glow2");
+  $(".arrow2").addClass("glow-arrow2");
+});
+$(".circle2").mouseleave(function(){
+  $(this).removeClass("glow2");
+  $(".arrow2").removeClass("glow-arrow2");
+});
+
+$(".circle2").click(function(){
+  $(".dropdown2").slideToggle();
+  $(".item2").toggleClass("reflect");
+});
+
 

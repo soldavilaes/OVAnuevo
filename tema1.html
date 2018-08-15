@@ -819,18 +819,95 @@
 														<iframe width="560" height="340" src="https://www.powtoon.com/embed/daL0P78c98P/"></iframe>
 													</div>
 												</li>
-												<li class="carousels-item">
-													<div class="item-2"></div>
-												</li>
-												<li class="carousels-item">
-													<div class="item-3"></div>
-												</li>
-												<li class="carousels-item">
-													<div class="item-4"></div>
-												</li>
-												<li class="carousels-item">
-													<div class="item-5"></div>
-												</li>
+												 <li class="carousels-item">
+										                <div class="item-2">
+										                	 <h5>Definición</h5>
+										                	<div class="boxes effect1 orange">
+															  <p id="dRecursividad"><span>La <b>recursividad</b> es el proceso mediante el cual una función puede llamarse a sí misma desde la misma función, de tal manera que se ejecuta una cantidad finita de veces. De acuerdo a esto, una de las partes más pequeñas de la función puede ser la misma función que se esté tratando de implementar.</span></p>
+															</div>
+										                	<div class="wrapperss">
+																<div class="containerss clearfixx">
+																<div class="item1s one reflection clearfixx">
+																  <h1>CASOS BASE</h1>
+																  <p></p>
+																  <span class="circle1"><span class="arrow1"></span></span>
+																</div>
+																  <div class="dropdown">
+																       <p>Son aquellos casos que se resuelven sin recursividad, y se constituyen condiciones de parada para que la recursividad no sea infinita. Este tipo de casos debe proporcionar una solución o acercar al programador a ella.</p>
+																  </div>
+																</div>
+																<div class="containerss2 clearfixx2">
+																	<div class="item2 two reflection clearfixx2">
+																	  <h1>CASOS GENERALES</h1>
+																	  <p></p>
+																	  <span class="circle2"><span class="arrow2"></span></span>
+																	</div>
+																	<div class="dropdown2">
+																	   <p>Son aquellos que siempre deben avanzar hacia un caso base, y son considerados expresiones de forma recursiva.</p>
+																	</div>
+																</div>
+															</div>
+                										</div>
+											         </li>
+											         <li class="carousels-item">
+											            <div class="item-3">
+											                <h5>Definiciones Recursivas: Los Números</h5>
+										                	<p id="ej1Factorial"><span><b>Ejemplo 1:</b> Calcular el factorial del numero 3 por medio de una funcion recursiva.</span></p>
+										                	<div id="Awesome" class="anim750">
+															  <div class="reveal circle_wrapper">
+																	<div class="circles"><p id="sticker"><span>El <b>factorial</b> de un número n es la multiplicación de números consecutivos hasta el numero n.</span></p></div>
+																</div>				
+																<div class="stickys anim750">
+																	<div class="front circle_wrapper anim750">
+																		<div class="circles anim750"></div>
+																  </div>
+																</div>
+															  <h4>Tip!</h4>				
+															  <div class="stickys anim750">
+																	<div class="back circle_wrapper anim750">
+																		<div class="circles anim750"></div>
+																	</div>
+																</div>						
+															</div>
+															<P id="subt1"><span>Solución Iterativa</span></P>
+															<p id="subt2"><span>Solución Recursiva</span></p>
+															<div class="boxesA">
+  																<div class="boxA multiple">n! = 1*2*3*...*(n-1)*n</div>
+															</div>
+															<div class="boxesB">
+															  <div class="boxB multiples"><span id="fact">Factorial(n)=</span><div class="example curly-bracket-left"><span> Si n=0 n!=1 --> Caso Base <br>Si n>0 n!=n*(n-1)! --> Caso General</span></div></div>
+															</div>
+															<P id="subt3"><span>Análisis -></span></P>
+															<p id="subt4"><span>Implementación -></span></p>
+															<img id="analisisF" class="lightbox" src="analisis.png" />
+															<img id="implementacionF" class="lightbox" src="factorial.png" />
+                										</div>
+            										</li>
+										            <li class="carousels-item">
+										                <div class="item-4">
+										                	<h5>Triángulo de Pascal</h5>
+										                	<p id="ej2Pascal"><span><b>Ejemplo 2:</b> Realice una función en DrRacket que calcule de forma recursiva el número de Pascal que se encuentra en una determinada fila y columna.</span></p>
+										                	<img id="triangulo" src="triangulo.gif" />
+										                	<P id="subt5"><span>Solución Recursiva</span></P>
+										                	 <div class="cajaSolucion"><span id="pascal">Pascal (fila, columna) =</span> <div class="midel-title"><span id="linea1">Si columna = 0  pascal (x,0) = 1 --> Caso Base <br>Si fila = columna  pascal (x,x) = 1 --> Caso Base<br> pascal (fila-1, columna-1) + pascal (fila-1, columna) --> Caso General</span></div> </div>
+										                	 <P id="subt6"><span>Análisis -></span></P>
+															<p id="subt7"><span>Implementación -></span></p>
+															<img id="analisisP" class="lightbox" src="analisisP.png" />
+															<img id="implementacionP" class="lightbox" src="pascal.png" />
+										                </div>
+										            </li>
+										            <li class="carousels-item">
+										                <div class="item-5">
+										                	<h5> Tienda de Juguetes</h5>
+										                	<p id="ej2Pascal"><span><b>Ejemplo 3:</b> Determinar si un juguete está disponible. A continuación la <b>solución recursiva</b>:</span></p>
+										                	<img id="matrioshka" src="juguetes_opt.png" />
+										                	<div id="caja9" class="i13">contiene-juquete? (lista, juguete) = <div class="midel-titles"><span id="linea2">Si &nbsp; lista = empty &nbsp;  contiene-juguete? = false --> Caso Base<br> 
+										                		Si &nbsp; firsElemLista = symbol = juguete &nbsp; contiene-juguete? = true --> Caso Base<br> 
+										                		contiene-juguete? ((rest lista) juguete) --> Caso General</span></div> </div>
+										                		<P id="subt8"><span>Implementación -></span></P>
+										                		<img id="implementacionM" class="lightbox" src="pascal.png" />
+										                </div> 
+										        	</li>
 											</ul>
 										</div>
 									</div>
