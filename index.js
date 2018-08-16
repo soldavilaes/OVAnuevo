@@ -90,8 +90,8 @@ $(document).ready(function() {
         })();
 
 
-
-var myString = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ";
+/* EFECTO LETRAS INTRODUCCION*/
+var myString = "En cualquier ámbito en que nos encontremos es importante realizar un manejo adecuado de los datos, por lo cual es necesario conocer la manera de manipularlos. En el mundo de la programación existen datos compuestos como las listas que permiten organizar la información, pero para utilizarlas es necesario conocer su estructura interna, la manera de construirlas, las funciones que se pueden aplicar sobre ellas, así como su aplicabilidad en funciones recursivas, tal y como se tratará en el transcurso del tema.";
 var myArray = myString.split("");
 var loopTimer;
 
