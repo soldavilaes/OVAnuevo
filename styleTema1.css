@@ -4721,6 +4721,8 @@ margin: 110px -545px;
 
 /* PESTAÑA 7 */
 
+/* PESTAÑA 7 */
+
 .conP7{
   top: -445px;
   height: 500px;
@@ -4737,13 +4739,13 @@ a.link:hover {
 }
 
 .content-1 {
-margin: -50px -65px;
+margin: -85px -65px;
 text-align: justify;
 color: #000000;
 font-size:15px;
 width: 900px;
 font-family: open Sans;
-
+line-height:130%;
 }
 
 .tabsP7 {
@@ -4845,16 +4847,13 @@ font-family: open Sans;
 }
 
 .contentP7 {
-  height: auto;
-  width: 900px;
-  float: left;
+
   position: relative;
-  z-index: 5;
-  background: #fefefe;
-  top: -10px;
-  box-sizing: border-box;
-
-
+  padding: 15px 20px;
+  transition: 0.3s ease;
+  overflow: hidden;
+  background:#FFFFFF ;
+  height: 380px;
 }
 
 .contentP7 div {
@@ -4867,10 +4866,7 @@ font-family: open Sans;
   z-index: 1;
   opacity: 0;
   background: #fefefe;
-
-
 }
-
 
 .tabsP7 .tab-selector-1:checked ~ .contentP7 .content-1,
 .tabsP7 .tab-selector-2:checked ~ .contentP7 .content-2,
@@ -4889,7 +4885,89 @@ font-family: open Sans;
 }
 
 #preguntaP7{
-  margin: 50px 255px;
+  margin: 45px 240px;
+}
+
+#textoP7{
+  margin: 60px -495px;
+}
+
+#siignoP7{
+  margin: 45px 130px;
+}
+
+#defP7{
+   margin: 125px -200px;
+}
+
+#text1P7{
+   margin: 50px -220px;
+}
+
+#text2P7{
+   margin: 250px -220px;
+}
+
+#librosP7{
+   margin: 50px -500px;
+}
+
+#texto3P7{
+margin: 70px -510px;
+}
+
+#texto4P7{
+margin: 340px -470px;
+}
+
+
+#profesoraP7{
+  margin: 45px -500px;
+}
+
+#profesora2P7{
+  margin: 50px 215px;
+}
+
+#bombilloP7{
+margin: 45px 150px;
+}
+
+#tableroP7{
+ margin: 45px -280px;
+}
+
+.contentP7 .content-2 {
+  
+margin: -85px -65px;
+text-align: justify;
+color: #000000;
+font-size:15px;
+width: 900px;
+font-family: open Sans;
+line-height:130%;
+}
+
+.contentP7 .content-3 {
+  
+margin: -85px -65px;
+text-align: justify;
+color: #000000;
+font-size:15px;
+width: 900px;
+font-family: open Sans;
+line-height:130%;
+}
+
+.contentP7 .content-4 {
+  
+margin: -85px -65px;
+text-align: justify;
+color: #000000;
+font-size:15px;
+width: 900px;
+font-family: open Sans;
+line-height:130%;
 }
 
 /*PESTANA 8 - CARRUSEL*/
