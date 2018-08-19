@@ -677,6 +677,11 @@ header.active, .intro.active, #menu-left.active, footer.active {
   section {margin-top: 57px}
   article .box .feed p {font-size: 12px;}
 }*/
+/* INDICACION DE PESTAÑAS*/ 
+#iPestaña {
+      margin: -2px -224px;
+}
+
 /* PESTAÑAS */
 .tabbedPanels {
   width: 75%;
@@ -2106,7 +2111,7 @@ font-size: 17px;
  #indicacion2 span {
   font-style: italic;
   font-weight: bold;
-  margin: -70px -20px; 
+  margin: -70px -370px; 
   color: #ff6600;
   font-family: 'Open Sans', sans-serif;
   font-size: 17px;
@@ -3108,6 +3113,17 @@ font-size:18px;
 }
 
 /* PESTAÑA 6*/
+
+#indicacion3 span {
+  font-style: italic;
+  font-weight: bold;
+  margin: -70px -30px; 
+  color: #ff6600;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  left: 385px;
+ }
+
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -5386,6 +5402,7 @@ line-height:130%;
 }
 
 /* PESTAÑA 8 - STEP 3 */
+
 #ej1Factorial {
   font-style: normal;
   font-family: 'Open Sans';
@@ -6049,4 +6066,24 @@ line-height:130%;
   100%{
     transform:rotate(0deg);
   }
+}
+
+#video {
+  width: 560px;
+  height: 340px;
+  margin-top: 23px; 
+}
+
+#ubicacion {
+ top: -8px;
+}
+
+ .item-1 h6 {
+  font-style: italic;
+font-weight: bold;
+color: #ff6600;
+font-family: 'Open Sans', sans-serif;
+font-size: 17px;
+margin: -254px;
+margin-left: -660px;
 }

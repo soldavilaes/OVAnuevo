@@ -201,7 +201,7 @@
 
 		<div id="escenario">
 			<pre><h3 id="pointer">       <i class="fa fa-list"></i> TEMA 1</h3> </pre>
-			<p>Hacer clic en las pestañas para continuar </p><img src="indicacion1.png"/>
+			<p>Hacer clic en las pestañas para continuar </p><img id="iPestaña" src="pestañas.png"/>
 
 			<!--  <div id="contenidoGeneral">-->
 
@@ -474,7 +474,7 @@
 								</div>
 							</div>
 						</div>
-
+						<!-- PESTAÑA 5 -->	
 						<div class="panel" id="panel5">
 							<h1 class = "panelContent"></h1>
 							<p id="indicacion2" class = "panelContent"><span>Haz clic sobre las pestañas verticales para observar los ejemplos.</span></p>
@@ -507,7 +507,7 @@
 									</div> 
 									<!--video tab content-->
 									<div id="video-tab" class="tab-content">
-										<h2><img id="imagen9" src="ejemplo1.png" /></h2>
+										<h2><img id="imagen9" src="subEjemplo1.png" /></h2>
 										<p id="esEjemplo1"><span> La lista <b>'(1 2 3 4)</b> se construye con la siguiente secuencia de parejas:</span></p>
 										<p id="secuencia"><span><img id="imagen11" src="secuenciaParejas.png"></span></p>
 										<img  id="imagen12" src="anuncio.png" />	
@@ -515,7 +515,7 @@
 									</div>
 									<!--audio tab content-->
 									<div id="audio-tab" class="tab-content">
-										<h2><img id="imagen10" src="ejemplo2.png" /></h2>
+										<h2><img id="imagen10" src="subEjemplo2.png" /></h2>
 										<p id="esEjemplo2"><span> Realice la estructura interna de la lista que almacena los múltiplos de <b>3</b> menores que <b>15</b>, utilizando los diagramas de caja y puntero. </span></p>
 										<img  id="imagen14" src="bien.png" />	
 										<img  id="imagen15" src="ejemplo2.gif" />
@@ -549,7 +549,7 @@
 						<div class="panel" id="panel6">
 							<h1 class = "panelContent"></h1>
 							<img id="imagen21" src="funcionesBasica.png" />
-							<p id="indicacion2" class = "panelContent"><span> Haz clic sobre las pestañas verticales para observar las funciones.</span>
+							<p id="indicacion3" class = "panelContent"><span> Haz clic sobre las pestañas verticales para observar las funciones.</span>
 								<!-- / .slide__side-by-side or slide__stacked -->
 								<div class='slide__side-by-side'>
 									<div class='slide--tabs'>
@@ -641,7 +641,7 @@
 												</div>
 											</div>
 											<img  id="imagen24" class="lightbox" src="ejemCdr.png" />
-											<img id="imagen25" class="lightbox" src="CarFirst.png" />
+											<img id="imagen25" class="lightbox" src="carFirst.png" />
 											<div class="containerMass">
 												<input type="checkbox" id="toggles" />
 												<label class="buttonMass" for="toggles"></label>
@@ -819,7 +819,8 @@
 											<ul class="carousels-container">
 												<li class="carousels-item">
 													<div class="item-1">
-														<iframe width="560" height="340" src="https://www.powtoon.com/embed/daL0P78c98P/"></iframe>
+														<h6>Haz clic en los botones &#9658; para observar el video.</h6>
+														<div id="ubicacion" ><iframe id="video" src="https://www.powtoon.com/embed/daL0P78c98P/"></iframe></div>
 													</div>
 												</li>
 												 <li class="carousels-item">
@@ -841,7 +842,7 @@
 																</div>
 																<div class="containerss2 clearfixx2">
 																	<div class="item2 two reflection clearfixx2">
-																	  <h1>CASOS GENERALES</h1>
+																	  <h1>CASOS RECURSIVOS</h1>
 																	  <p></p>
 																	  <span class="circle2"><span class="arrow2"></span></span>
 																	</div>
@@ -880,8 +881,8 @@
 															<div class="boxesB">
 															  <div class="boxB multiples"><span id="fact">Factorial(n)=</span><div class="example curly-bracket-left"><span> Si n=0 n!=1 --> Caso Base <br>Si n>0 n!=n*(n-1)! --> Caso General</span></div></div>
 															</div>
-															<P id="subt3"><span>Análisis -></span></P>
-															<p id="subt4"><span>Implementación -></span></p>
+															<P id="subt3"><span>Análisis &#8594;</span></P>
+															<p id="subt4"><span>Implementación &#8594;</span></p>
 															<img id="analisisF" class="lightbox" src="analisis.png" />
 															<img id="implementacionF" class="lightbox" src="factorial.png" />
                 										</div>
@@ -894,7 +895,7 @@
 										                	<P id="subt5"><span>Solución Recursiva</span></P>
 										                	 <div class="cajaSolucion"><span id="pascal">Pascal (fila, columna) =</span> <div class="midel-title"><span id="linea1">Si columna = 0  pascal (x,0) = 1 --> Caso Base <br>Si fila = columna  pascal (x,x) = 1 --> Caso Base<br> pascal (fila-1, columna-1) + pascal (fila-1, columna) --> Caso General</span></div> </div>
 										                	 <P id="subt6"><span>Análisis -></span></P>
-															<p id="subt7"><span>Implementación -></span></p>
+															<p id="subt7"><span>Implementación &#8594;</span></p>
 															<img id="analisisP" class="lightbox" src="analisisP.png" />
 															<img id="implementacionP" class="lightbox" src="pascal.png" />
 										                </div>
@@ -907,7 +908,7 @@
 										                	<div id="caja9" class="i13">contiene-juquete? (lista, juguete) = <div class="midel-titles"><span id="linea2">Si &nbsp; lista = empty &nbsp;  contiene-juguete? = false --> Caso Base<br> 
 										                		Si &nbsp; firsElemLista = symbol = juguete &nbsp; contiene-juguete? = true --> Caso Base<br> 
 										                		contiene-juguete? ((rest lista) juguete) --> Caso General</span></div> </div>
-										                		<P id="subt8"><span>Implementación -></span></P>
+										                		<P id="subt8"><span>Implementación &#8594;</span></P>
 										                		<img id="implementacionM" class="lightbox" src="juguetes.png" />
 										                </div> 
 										        	</li>

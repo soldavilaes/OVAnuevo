@@ -101,6 +101,6 @@ function looper() {
   } else {
     clearTimeout(loopTimer);
   }
-  loopTimer = setTimeout('looper()', 100);
+  loopTimer = setTimeout('looper()', 10);
 }
 looper();
