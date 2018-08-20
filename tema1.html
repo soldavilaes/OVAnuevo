@@ -494,7 +494,7 @@
 												<p>Una lista está conformada por una secuencia de parejas, en las cuales el primer elemento es el dato y el segundo el resto de la lista.</p>
 											</aside>
 											<aside class="note-wrap note-pink">
-												<p>una lista habitualmente terminara en una <b>lista vacía (empty)</b> o espacio en blanco, aunque este no sea visible. </p>
+												<p>Una lista habitualmente terminara en una <b>lista vacía (empty)</b> o espacio en blanco, aunque este no sea visible. </p>
 											</aside>
 											<img id="imagen8" src="estructuraLista.png" />
 											<p id="estructura"><span>PAREJA</span></p>
@@ -884,20 +884,21 @@
             										</li>
 										            <li class="carousels-item">
 										                <div class="item-4">
-										                	<h5>Triángulo de Pascal</h5>
-										                	<p id="ej2Pascal"><span><b>Ejemplo 2:</b> Realice una función en DrRacket que calcule de forma recursiva el número de Pascal que se encuentra en una determinada fila y columna.</span></p>
-										                	<img id="triangulo" src="triangulo.gif" />
+										                	<h5>Costo de un Inventario</h5>
+										                	<p id="ej2Inventario"><span><b>Ejemplo 2:</b> Desarrolle una función suma que calcule el valor de un inventario a partir del costo de los juguetes individuales.</span></p>
+										                	<img id="muñecoI" src="inventario.png" />
 										                	<P id="subt5"><span>Solución Recursiva</span></P>
-										                	 <div class="cajaSolucion"><span id="pascal">Pascal (fila, columna) =</span> <div class="midel-title"><span id="linea1">Si columna = 0  pascal (x,0) = 1 --> Caso Base <br>Si fila = columna  pascal (x,x) = 1 --> Caso Base<br> pascal (fila-1, columna-1) + pascal (fila-1, columna) --> Caso General</span></div> </div>
-										                	 <P id="subt6"><span>Análisis -></span></P>
+										                	 <div class="cajaSolucion"><span id="suma">Suma (lista-de-precios) =</span> <div class="midel-title"><span id="linea1">Si &nbsp; lista-de-precios = empty &nbsp; suma = 0 --> Caso Base <br>
+										                	 	(first lista-de-precios) + suma (rest lista-de-precios) --> Caso Recursivo</span></div> </div>
+										                	 <P id="subt6"><span>Análisis &#8594;</span></P>
 															<p id="subt7"><span>Implementación &#8594;</span></p>
-															<img id="analisisP" class="lightbox" src="analisisP.png" />
-															<img id="implementacionP" class="lightbox" src="pascal.png" />
+															<img id="analisisI" class="lightbox" src="analisisP.png" />
+															<img id="implementacionI" class="lightbox" src="pascal.png" />
 										                </div>
 										            </li>
 										            <li class="carousels-item">
 										                <div class="item-5">
-										                	<h5> Tienda de Juguetes</h5>
+										                	<h5> Disponibilidad de Juguetes</h5>
 										                	<p id="ej2Pascal"><span><b>Ejemplo 3:</b> Determinar si un juguete está disponible. A continuación la <b>solución recursiva</b>:</span></p>
 										                	<img id="matrioshka" src="juguetes_opt.png" />
 										                	<div id="caja9" class="i13">contiene-juquete? (lista, juguete) = <div class="midel-titles"><span id="linea2">Si &nbsp; lista = empty &nbsp;  contiene-juguete? = false --> Caso Base<br> 
