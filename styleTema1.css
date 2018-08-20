@@ -1936,24 +1936,27 @@ top: -525px;
 
 .click{
   
-  text-align:center;
-top: 160px;
+text-align: center;
+top: 150px;
+width: 45px;
+left: 850px;
+border-radius: 200px;
 
 }
+
 button{
  
   text-align:center;
-  width:40px;
-  border:none;
-  height:40px;
+  width:45px;
+  height:45px;
   font-family:'Open Sans', sans-serif;
   font-size:17px;
   float: right;
   background-color: #FFC145;
   cursor: pointer;
   z-index: 999;
- border-radius: 80%;
-
+ border-radius: 90%;
+-webkit-border-radius: 90px;
    
 }
 
