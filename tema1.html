@@ -874,7 +874,7 @@
   																<div class="boxA multiple">n! = 1*2*3*...*(n-1)*n</div>
 															</div>
 															<div class="boxesB">
-															  <div class="boxB multiples"><span id="fact">Factorial(n)=</span><div class="example curly-bracket-left"><span> Si n=0 n!=1 --> Caso Base <br>Si n>0 n!=n*(n-1)! --> Caso General</span></div></div>
+															  <div class="boxB multiples"><span id="fact">Factorial(n)=</span><div class="example curly-bracket-left"><span> Si n=0 n!=1 &#8594; Caso Base <br>Si n>0 n!=n*(n-1)! &#8594; Caso Recursivo</span></div></div>
 															</div>
 															<P id="subt3"><span>Análisis &#8594;</span></P>
 															<p id="subt4"><span>Implementación &#8594;</span></p>
@@ -888,22 +888,22 @@
 										                	<p id="ej2Inventario"><span><b>Ejemplo 2:</b> Desarrolle una función suma que calcule el valor de un inventario a partir del costo de los juguetes individuales.</span></p>
 										                	<img id="muñecoI" src="inventario.png" />
 										                	<P id="subt5"><span>Solución Recursiva</span></P>
-										                	 <div class="cajaSolucion"><span id="suma">Suma (lista-de-precios) =</span> <div class="midel-title"><span id="linea1">Si &nbsp; lista-de-precios = empty &nbsp; suma = 0 --> Caso Base <br>
-										                	 	(first lista-de-precios) + suma (rest lista-de-precios) --> Caso Recursivo</span></div> </div>
+										                	 <div class="cajaSolucion"><span id="suma">Suma (lista-de-precios) =</span> <div class="midel-title"><span id="linea1">Si &nbsp; lista-de-precios = empty &nbsp; suma = 0 &#8594; Caso Base <br>
+										                	 	(first lista-de-precios) + suma (rest lista-de-precios) &#8594; Caso Recursivo</span></div> </div>
 										                	 <P id="subt6"><span>Análisis &#8594;</span></P>
 															<p id="subt7"><span>Implementación &#8594;</span></p>
-															<img id="analisisI" class="lightbox" src="analisisP.png" />
-															<img id="implementacionI" class="lightbox" src="pascal.png" />
+															<img id="analisisI" class="lightbox" src="analisisInv.png" />
+															<img id="implementacionI" class="lightbox" src="implementacionInv.png" />
 										                </div>
 										            </li>
 										            <li class="carousels-item">
 										                <div class="item-5">
 										                	<h5> Disponibilidad de Juguetes</h5>
-										                	<p id="ej2Pascal"><span><b>Ejemplo 3:</b> Determinar si un juguete está disponible. A continuación la <b>solución recursiva</b>:</span></p>
+										                	<p id="ej3Juguetes"><span><b>Ejemplo 3:</b> Determinar si un juguete está disponible. A continuación la <b>solución recursiva</b>:</span></p>
 										                	<img id="matrioshka" src="juguetes_opt.png" />
-										                	<div id="caja9" class="i13">contiene-juquete? (lista, juguete) = <div class="midel-titles"><span id="linea2">Si &nbsp; lista = empty &nbsp;  contiene-juguete? = false --> Caso Base<br> 
-										                		Si &nbsp; firsElemLista = symbol = juguete &nbsp; contiene-juguete? = true --> Caso Base<br> 
-										                		contiene-juguete? ((rest lista) juguete) --> Caso General</span></div> </div>
+										                	<div id="caja9" class="i13">contiene-juquete? (lista, juguete) = <div class="midel-titles"><span id="linea2">Si &nbsp; lista = empty &nbsp;  contiene-juguete? = false &#8594; Caso Base<br> 
+										                		Si &nbsp; firsElemLista = symbol = juguete &nbsp; contiene-juguete? = true &#8594; Caso Base<br> 
+										                		contiene-juguete? ((rest lista) juguete) &#8594; Caso Recursivo</span></div> </div>
 										                		<P id="subt8"><span>Implementación &#8594;</span></P>
 										                		<img id="implementacionM" class="lightbox" src="juguetes.png" />
 										                </div> 

@@ -5713,7 +5713,7 @@ line-height:130%;
   padding: 2px;
   display: inline-block;
   vertical-align: middle;
-  width: 292px;
+  width: 305px;
   text-align: left;
 }
 
@@ -5931,6 +5931,20 @@ line-height:130%;
 }
 
 /* PESTAÑA 8 - STEP 5*/
+
+#ej3Juguetes {
+  font-style: normal;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  margin: 25px 55px;
+  text-align: justify;
+  line-height: 1;
+}
+
+#ej3Juguetes span {
+  font-style: normal;
+}
+
 #matrioshka {
   margin: 155px -450px;
 }
