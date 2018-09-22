@@ -1425,7 +1425,8 @@ label:first-child {
 
 
 /* SEGUNDO BOTON + */
-.containerMass, .buttonMas2 {
+.
+, .buttonMas2 {
   position: absolute;
 }
 
@@ -3019,8 +3020,8 @@ text-align: justify all;
 }
 
 .boxes4 {
-  margin:5px 28px;
-  width:800px;
+  margin:20px 10px;
+  width:400px;
   height:100px;
   background:-webkit-linear-gradient(left, #a3e4d7 0%,#ffffff 42%,#ffffff 52%,#e2e1e0 100%);
   font-size: 14px;

@@ -4,39 +4,90 @@ and open the template in the editor.
 -->
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <style type="text/css" media="screen">
-            @import 'styleActividad.css';
-         </style>
-          <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css" media="screen">
+  @import 'styleActividad.css';
+</style>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fredoka+One'>
 
-    </head>
-    <body>
-        <div id="content">
-            <div id ="cabecera">
-                 <img src="iconoPrin.png"/>
-              <pre><h2>              PROCESAMIENTO DE DATOS ARBITRARIAMENTE GRANDES</h2></pre>
-            </div>
-  
-        <div id="escenario">
-                 <pre><h3 id="pointer">       <i class="fa fa-edit"></i> ACTIVIDAD</h3> </pre>
-                  <p>Ubique el cursor del mouse sobre los recuadros para observar los objetivos.</p><img src="indicacion1.png"/> 
+<link type="text/css" href="Sopa_de_letras_resources/css/ardoraSopa.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="Sopa_de_letras_resources/js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="Sopa_de_letras_resources/js/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="Sopa_de_letras_resources/js/jquery.ui.touch-punch.min.js"></script>
+<script language="javascript" type="text/javascript" src="Sopa_de_letras_resources/js/ardoraSopaCFG.js"></script>
+<script language="javascript" type="text/javascript" src="Sopa_de_letras_resources/js/ardoraScorm.js"></script>
+<script language="javascript" type="text/javascript" src="Sopa_de_letras_resources/js/ardoraSopa.js"></script>
+<script language="javascript" type="text/javascript" src="Sopa_de_letras_resources/js/ardoraTab.js"></script>
 
-        <div id="contenidoGeneral">
-     
+</head>
+<body onLoad="loadPage()" onbeforeunload="unloadPage()" onUnload="unloadPage()">
+  <div id="content">
+    <div id ="cabecera">
+     <img src="iconoPrin.png"/>
+     <pre><h2>              PROCESAMIENTO DE DATOS ARBITRARIAMENTE GRANDES</h2></pre>
+   </div>
 
+   <div id="escenario">
+     <pre><h3 id="pointer">       <i class="fa fa-edit"></i> ACTIVIDAD</h3> </pre>
+     <p>Ubique el cursor del mouse sobre los recuadros para observar los objetivos.</p><img src="indicacion1.png"/> 
+     <!-- PESTAÑAS -->      
+     <div id="tabs">
+      <ul id="tabs-nav">
+        <li class="pestaña5"><a href="#tab5">5</a></li>
+        <li class="pestaña4"><a href="#tab4">4</a></li>
+        <li class="pestaña3"><a href="#tab3">3</a></li>
+        <li class="pestaña2"><a href="#tab2">2</a></li>
+        <li class="pestaña1"><a href="#tab1">1</a></li>
+      </ul> <!-- tabs-nav -->
+      <div id="tabs-content">
+        <div id="tab1" class="contentt">
+         <div id="ardoraMain">
+<audio id="audioFelicitacion">
+<source src="Sopa_de_letras_resources/media/bien-hecho.mp3" type="audio/mp3">
+</audio>
+<div id="ardoraEnu"><SPAN style="font-size:12px;color:#000000">Selecciona las palabras de la sopa de letras.</SPAN></div>
+  <div id="ardoraAct">
+<canvas id="ardoraActBoard" width="990px" height="600px"></canvas>
+<canvas id="ardoraActSel" width="990px" height="600px"></canvas>
+<canvas id="ardoraActCanvas" width="2px" height="2px"></canvas>
+  </div>
+<div id="ardoraTab">
+</div></div>
+<div id="ardoraAlumSCORM"><p></p></div>
 
-        </div>
-        </div>
+       </div>
+       <div id="tab2" class="contentt">
+        dos
 
-         <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+      </div>
+      <div id="tab3" class="contentt">
+        <h2>Third</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas sunt doloribus perspiciatis a cum alias adipisci laboriosam quibusdam ipsum eius veritatis asperiores labore quo hic assumenda laudantium excepturi repellendus ullam.</p>
+      </div>
 
-  
+      <div id="tab4" class="contentt">
+        cuatro
+      </div>
 
-    <script  src="actividad.js"></script>
-
-    </body>
+<div id="tab5" class="contentt">
+  <h2>Third</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas sunt doloribus perspiciatis a cum alias adipisci laboriosam quibusdam ipsum eius veritatis asperiores labore quo hic assumenda laudantium excepturi repellendus ullam.</p>
+</div>
+</div> <!-- tabs-content -->
+</div> <!-- Tabs -->
+<script src="actividad.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="jquery.ui.touch-punch.min.js"></script>
+<script src="jquery.js"></script>
+<script src="ardoraTab.js"></script>
+<script src="ardoraSopaCFG.js"></script>
+<script src="ardoraSopa.js"></script>
+<script src="ardoraScorm.js"></script>
+<script src="ardoraSopa.css"></script>
+</div>
+</body>
 </html>
