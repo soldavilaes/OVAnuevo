@@ -14,17 +14,17 @@ and open the template in the editor.
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fredoka+One'>
 
-<link type="text/css" href="Sopa_de_letras_resources/css/ardoraSopa.css" rel="stylesheet" />
-<script language="javascript" type="text/javascript" src="Sopa_de_letras_resources/js/jquery.js"></script>
-<script language="javascript" type="text/javascript" src="Sopa_de_letras_resources/js/jquery-ui.min.js"></script>
-<script language="javascript" type="text/javascript" src="Sopa_de_letras_resources/js/jquery.ui.touch-punch.min.js"></script>
-<script language="javascript" type="text/javascript" src="Sopa_de_letras_resources/js/ardoraSopaCFG.js"></script>
-<script language="javascript" type="text/javascript" src="Sopa_de_letras_resources/js/ardoraScorm.js"></script>
-<script language="javascript" type="text/javascript" src="Sopa_de_letras_resources/js/ardoraSopa.js"></script>
-<script language="javascript" type="text/javascript" src="Sopa_de_letras_resources/js/ardoraTab.js"></script>
+<link type="text/css" href="crucigrama_resources/css/ardoraCW.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="crucigrama_resources/js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="crucigrama_resources/js/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="crucigrama_resources/js/jquery.ui.touch-punch.min.js"></script>
+<script language="javascript" type="text/javascript" src="crucigrama_resources/js/ardoraCWCFG.js"></script>
+<script language="javascript" type="text/javascript" src="crucigrama_resources/js/ardoraScorm.js"></script>
+<script language="javascript" type="text/javascript" src="crucigrama_resources/js/ardoraCW.js"></script>
+<script language="javascript" type="text/javascript" src="crucigrama_resources/js/ardoraTab.js"></script>
 
 </head>
-<body onLoad="loadPage()" onbeforeunload="unloadPage()" onUnload="unloadPage()">
+<body>
   <div id="content">
     <div id ="cabecera">
      <img src="iconoPrin.png"/>
@@ -45,19 +45,147 @@ and open the template in the editor.
       </ul> <!-- tabs-nav -->
       <div id="tabs-content">
         <div id="tab1" class="contentt">
-         <div id="ardoraMain">
+<div id="ardoraMain">
 <audio id="audioFelicitacion">
-<source src="Sopa_de_letras_resources/media/bien-hecho.mp3" type="audio/mp3">
+<source src="crucigrama_resources/media/bien-hecho.mp3" type="audio/mp3">
 </audio>
-<div id="ardoraEnu"><SPAN style="font-size:12px;color:#000000">Selecciona las palabras de la sopa de letras.</SPAN></div>
+<audio id="audioErro">
+<source src="crucigrama_resources/media/perder-incorrecto-no-valido.mp3" type="audio/mp3">
+</audio>
+<div id="ardoraEnu"><SPAN style="font-size:12px;color:#000000">Completa el crucigrama con los nombres de las definiciones del tema de listas.</SPAN></div>
   <div id="ardoraAct">
-<canvas id="ardoraActBoard" width="990px" height="600px"></canvas>
-<canvas id="ardoraActSel" width="990px" height="600px"></canvas>
+  <table id="tableGame">
+<tr>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C3_0" name="C3_0" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+</tr>
+<tr>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C3_1" name="C3_1" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+</tr>
+<tr>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C3_2" name="C3_2" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+</tr>
+<tr>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C3_3" name="C3_3" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C8_3" name="C8_3" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+</tr>
+<tr>
+<td class="activeCell"><input id="C0_4" name="C0_4" type="text" class="cell" maxlength="1"/></td>
+<td class="activeCell"><input id="C1_4" name="C1_4" type="text" class="cell" maxlength="1"/></td>
+<td class="activeCell"><input id="C2_4" name="C2_4" type="text" class="cell" maxlength="1"/></td>
+<td class="activeCell"><input id="C3_4" name="C3_4" type="text" class="cell" maxlength="1"/></td>
+<td class="activeCell"><input id="C4_4" name="C4_4" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C6_4" name="C6_4" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C8_4" name="C8_4" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+</tr>
+<tr>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C1_5" name="C1_5" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C6_5" name="C6_5" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C8_5" name="C8_5" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+</tr>
+<tr>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C1_6" name="C1_6" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C4_6" name="C4_6" type="text" class="cell" maxlength="1"/></td>
+<td class="activeCell"><input id="C5_6" name="C5_6" type="text" class="cell" maxlength="1"/></td>
+<td class="activeCell"><input id="C6_6" name="C6_6" type="text" class="cell" maxlength="1"/></td>
+<td class="activeCell"><input id="C7_6" name="C7_6" type="text" class="cell" maxlength="1"/></td>
+<td class="activeCell"><input id="C8_6" name="C8_6" type="text" class="cell" maxlength="1"/></td>
+<td class="activeCell"><input id="C9_6" name="C9_6" type="text" class="cell" maxlength="1"/></td>
+</tr>
+<tr>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C1_7" name="C1_7" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C4_7" name="C4_7" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C6_7" name="C6_7" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C8_7" name="C8_7" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+</tr>
+<tr>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C1_8" name="C1_8" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C4_8" name="C4_8" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+</tr>
+<tr>
+<td class="blackCell"></td>
+<td class="activeCell"><input id="C1_9" name="C1_9" type="text" class="cell" maxlength="1"/></td>
+<td class="activeCell"><input id="C2_9" name="C2_9" type="text" class="cell" maxlength="1"/></td>
+<td class="activeCell"><input id="C3_9" name="C3_9" type="text" class="cell" maxlength="1"/></td>
+<td class="activeCell"><input id="C4_9" name="C4_9" type="text" class="cell" maxlength="1"/></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+<td class="blackCell"></td>
+</tr>
+</table>
 <canvas id="ardoraActCanvas" width="2px" height="2px"></canvas>
+<div id="buttonDir"><canvas id="ardoraButtonDirCanvas" width="40px" height="40px"></canvas></div>
+<div id="defIma"></div>
   </div>
 <div id="ardoraTab">
+  <div id="buttonOk"><canvas id="buttonOkCanvas" width="50" height="50"></canvas></div>
 </div></div>
 <div id="ardoraAlumSCORM"><p></p></div>
+
+        
 
        </div>
        <div id="tab2" class="contentt">
@@ -80,13 +208,13 @@ and open the template in the editor.
 </div> <!-- tabs-content -->
 </div> <!-- Tabs -->
 <script src="actividad.js"></script>
-<script src="jquery-ui.min.js"></script>
-<script src="jquery.ui.touch-punch.min.js"></script>
-<script src="jquery.js"></script>
-<script src="ardoraTab.js"></script>
-<script src="ardoraSopaCFG.js"></script>
-<script src="ardoraSopa.js"></script>
+<script src="ardoraCW.js"></script>
+<script src="ardoraCWCFG.js"></script>
 <script src="ardoraScorm.js"></script>
+<script src="ardoraTab.js"></script>
+<script src="jquery.js"></script>
+<script src="jquery.ui.touch-punch.min.js"></script>
+<script src="jquery-ui.min.js"></script>
 </div>
 </body>
 </html>
