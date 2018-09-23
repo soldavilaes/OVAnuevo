@@ -25,7 +25,7 @@ audio,video {display: inline-block;}
 audio:not([controls]) {display: none;height: 0;}
 img {border-style: none;}
 svg:not(:root) {overflow: hidden;}
-button,input,optgroup,select,textarea {font-family: sans-serif;font-size: 100%;line-height: 1.15;margin: 0;}
+button,input,optgroup,select,textarea {font-family: sans-serif;font-size: 100%;line-height: 2.15;margin: 0;}
 button,input {overflow: visible;}
 button,select {text-transform: none;}
 button,html [type="button"],[type="reset"],[type="submit"] {-webkit-appearance: button;}
@@ -48,7 +48,7 @@ template{display: none;}
 /*!END normalize.css v7.0.0*/
 .ui-corner-all{ -webkit-border-radius: 4px; border-radius: 4px;}
 body{background-color:black;}
-#ardoraMain{ font-family:Verdana, Geneva, sans-serif; color: #F0F0F0; padding: 5px; position: relative;}
+#ardoraMain{ font-family:Verdana, Geneva, sans-serif; color: #F0F0F0; position: relative; height: 460px;}
 #ardoraEnu{ font-size: 12px; position: relative; padding: 5px; margin-bottom: 10px;
 text-align: justify;
 }
@@ -61,16 +61,18 @@ background:rgba(255,128,0,0.5);}
 -webkit-border-radius: 4px;-khtml-border-radius: 4px;border-radius: 4px;
 -webkit-box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.5); box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.5);}
 #ardoraActCanvas{z-index: 0; position: absolute; visibility:hidden;top:0; left:5px;}
-#ardoraAct{position: relative; margin-right: 10px; padding: 5px; float: left;
+#ardoraAct{position: relative; margin-right: 10px; float: left;
 border-style: solid; border-width: 1px; -webkit-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px;
--webkit-box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.5);box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.5); margin: -10px auto;
+-webkit-box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.5);box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.5); margin: 0px auto; 
 }
 #ardoraTab{width: 70px; height:320px;position: relative; visibility: visible;padding:5px;float:left;}
 td{margin: 0; padding: 0; border: 1px; border-style: solid;}
-.cell{width:10px; height:15px; margin: 0; padding: 0;text-align: center;
+.cell{width:10px; height:35px; margin: 0; padding: 0;text-align: center;
 font-family:Verdana, Geneva, sans-serif; text-transform: uppercase;font-size:16px;
 cursor: pointer;border-style: none;background-color:#FFFDFD}
-.blackCell{background-color: black;width:10px; height:25px;}
+.blackCell{background-color: black;
+height: 10px;
+	width: 10px;}
 .hidetd{border:0px; border-style: none;}
 #defIma{font-size:12px; text-align: justify; z-index:1; width:250px; font-family:Verdana, Geneva, sans-serif;
 padding: 6px; border-radius:4px; border-style: solid; border-width: 1px;
@@ -81,3 +83,5 @@ table{float: left; margin-right: 20px; margin-bottom: 20px;}
 margin-left: 10px; float: right; cursor: pointer; width: 40px; height: 40px;box-shadow: 3px 3px 3px rgba(50, 50, 50, 0.5);}
 #ardoraButtonDirCanvas{padding: 0px;}
 .titleDef{padding-top: 5px; font-weight: bold; border-width: 1px; border-bottom-style: solid;}
+
+
