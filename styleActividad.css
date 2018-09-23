@@ -332,11 +332,11 @@ header h1 {
 
 input[type="text"],
 input[type="email"] {
-  padding: 10px 20px;
   border: 1px solid #999;
   border-radius: 3px;
   display: block;
-  width: 100%;
+  width: 40px;
+  
  /* margin-bottom: 20px;*/
   box-sizing: border-box;
   outline: none;
