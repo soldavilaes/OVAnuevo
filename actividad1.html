@@ -12,7 +12,14 @@ and open the template in the editor.
          </style>
           <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
+    <link type="text/css" href="crucigrama_resources/css/ardoraCW.css" rel="stylesheet" />
+    <script language="javascript" type="text/javascript" src="crucigrama_resources/js/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="crucigrama_resources/js/jquery-ui.min.js"></script>
+    <script language="javascript" type="text/javascript" src="crucigrama_resources/js/jquery.ui.touch-punch.min.js"></script>
+    <script language="javascript" type="text/javascript" src="crucigrama_resources/js/ardoraCWCFG.js"></script>
+    <script language="javascript" type="text/javascript" src="crucigrama_resources/js/ardoraScorm.js"></script>
+    <script language="javascript" type="text/javascript" src="crucigrama_resources/js/ardoraCW.js"></script>
+    <script language="javascript" type="text/javascript" src="crucigrama_resources/js/ardoraTab.js"></script>
     </head>
     <body>
         <div id="content">
@@ -26,9 +33,146 @@ and open the template in the editor.
                   <p>Ubique el cursor del mouse sobre los recuadros para observar los objetivos.</p><img src="indicacion1.png"/> 
 
         <div id="contenidoGeneral">
-     
-
-
+          <div id="ardoraMain">
+            <audio id="audioFelicitacion">
+            <source src="crucigrama_resources/media/bien-hecho.mp3" type="audio/mp3">
+            </audio>
+            <audio id="audioErro">
+            <source src="crucigrama_resources/media/perder-incorrecto-no-valido.mp3" type="audio/mp3">
+            </audio>
+            <div id="ardoraEnu"><SPAN style="font-size:14px;color:#000000">Completa el crucigrama con los nombres de las definiciones del tema de listas.</SPAN></div>
+              <div id="ardoraAct">
+              <table id="tableGame">
+            <tr>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C3_0" name="C3_0" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            </tr>
+            <tr>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C3_1" name="C3_1" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            </tr>
+            <tr>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C3_2" name="C3_2" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            </tr>
+            <tr>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C3_3" name="C3_3" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C8_3" name="C8_3" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            </tr>
+            <tr>
+            <td class="activeCell"><input id="C0_4" name="C0_4" type="text" class="cell" maxlength="1"/></td>
+            <td class="activeCell"><input id="C1_4" name="C1_4" type="text" class="cell" maxlength="1"/></td>
+            <td class="activeCell"><input id="C2_4" name="C2_4" type="text" class="cell" maxlength="1"/></td>
+            <td class="activeCell"><input id="C3_4" name="C3_4" type="text" class="cell" maxlength="1"/></td>
+            <td class="activeCell"><input id="C4_4" name="C4_4" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C6_4" name="C6_4" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C8_4" name="C8_4" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            </tr>
+            <tr>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C1_5" name="C1_5" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C6_5" name="C6_5" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C8_5" name="C8_5" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            </tr>
+            <tr>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C1_6" name="C1_6" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C4_6" name="C4_6" type="text" class="cell" maxlength="1"/></td>
+            <td class="activeCell"><input id="C5_6" name="C5_6" type="text" class="cell" maxlength="1"/></td>
+            <td class="activeCell"><input id="C6_6" name="C6_6" type="text" class="cell" maxlength="1"/></td>
+            <td class="activeCell"><input id="C7_6" name="C7_6" type="text" class="cell" maxlength="1"/></td>
+            <td class="activeCell"><input id="C8_6" name="C8_6" type="text" class="cell" maxlength="1"/></td>
+            <td class="activeCell"><input id="C9_6" name="C9_6" type="text" class="cell" maxlength="1"/></td>
+            </tr>
+            <tr>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C1_7" name="C1_7" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C4_7" name="C4_7" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C6_7" name="C6_7" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C8_7" name="C8_7" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            </tr>
+            <tr>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C1_8" name="C1_8" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C4_8" name="C4_8" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            </tr>
+            <tr>
+            <td class="blackCell"></td>
+            <td class="activeCell"><input id="C1_9" name="C1_9" type="text" class="cell" maxlength="1"/></td>
+            <td class="activeCell"><input id="C2_9" name="C2_9" type="text" class="cell" maxlength="1"/></td>
+            <td class="activeCell"><input id="C3_9" name="C3_9" type="text" class="cell" maxlength="1"/></td>
+            <td class="activeCell"><input id="C4_9" name="C4_9" type="text" class="cell" maxlength="1"/></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            <td class="blackCell"></td>
+            </tr>
+            </table>
+            <canvas id="ardoraActCanvas" width="2px" height="2px"></canvas>
+            <div id="buttonDir"><canvas id="ardoraButtonDirCanvas" width="40px" height="40px"></canvas></div>
+            <div id="defIma"></div>
+              </div>
+            <div id="ardoraTab">
+              <div id="buttonOk"><canvas id="buttonOkCanvas" width="65" height="65"></canvas></div> 
+            </div>
+          </div>
+          <div id="ardoraAlumSCORM"><p></p></div>
         </div>
         </div>
 
