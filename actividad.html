@@ -23,6 +23,15 @@ and open the template in the editor.
 <script language="javascript" type="text/javascript" src="crucigrama_resources/js/ardoraCW.js"></script>
 <script language="javascript" type="text/javascript" src="crucigrama_resources/js/ardoraTab.js"></script>
 
+<link type="text/css" href="AHORCADO_resources/css/ardoraAfor.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="AHORCADO_resources/js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="AHORCADO_resources/js/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="AHORCADO_resources/js/jquery.ui.touch-punch.min.js"></script>
+<script language="javascript" type="text/javascript" src="AHORCADO_resources/js/ardoraAforCFG.js"></script>
+<script language="javascript" type="text/javascript" src="AHORCADO_resources/js/ardoraScorm.js"></script>
+<script language="javascript" type="text/javascript" src="AHORCADO_resources/js/ardoraAfor.js"></script>
+<!--<script language="javascript" type="text/javascript" src="AHORCADO_resources/js/ardoraTab.js"></script>-->
+
 </head>
 <body>
   <div id="content">
@@ -193,9 +202,27 @@ and open the template in the editor.
         dos
 
       </div>
+      <!-- ACTIVIDAD 3--->
       <div id="tab3" class="contentt">
-        <h2>Third</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas sunt doloribus perspiciatis a cum alias adipisci laboriosam quibusdam ipsum eius veritatis asperiores labore quo hic assumenda laudantium excepturi repellendus ullam.</p>
+        <div id="principal">
+          <audio id="audioF">
+            <source src="AHORCADO_resources/media/ganar-tonos.mp3" type="audio/mp3">
+          </audio>
+          <audio id="audioFalla">
+            <source src="AHORCADO_resources/media/megaman-x-error.mp3" type="audio/mp3">
+          </audio>
+          <div id="enunciado">
+            <SPAN style="font-size:12px;color:#000000">Permite al programador resolver problemas sin necesidad de definir todos los pasos para llegar a la solución.</SPAN>
+          </div>
+            <div id="actividad3">
+              <div id="pregunta"></div><div id="img"></div>
+              <canvas id="activiCanvas" width="2px" height="2px"></canvas>
+            </div>
+          <div id="aTab">
+            <canvas id="tabbCanvas" width="70" height="49"></canvas>
+          </div>
+        </div>
+          <div id="SCORMact"><p></p></div>
       </div>
 
       <div id="tab4" class="contentt">
@@ -209,13 +236,6 @@ and open the template in the editor.
 </div> <!-- tabs-content -->
 </div> <!-- Tabs -->
 <script src="actividad.js"></script>
-<script src="ardoraCW.js"></script>
-<script src="ardoraCWCFG.js"></script>
-<script src="ardoraScorm.js"></script>
-<script src="ardoraTab.js"></script>
-<script src="jquery.js"></script>
-<script src="jquery.ui.touch-punch.min.js"></script>
-<script src="jquery-ui.min.js"></script>
 </div>
 </body>
 </html>
