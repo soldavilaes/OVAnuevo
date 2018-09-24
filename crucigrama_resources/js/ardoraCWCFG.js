@@ -20,7 +20,7 @@ var fMenssage="Verdana, Geneva, sans-serif";
 var fActi="Verdana, Geneva, sans-serif";
 var fDefs="Verdana, Geneva, sans-serif";
 var fEnun="Verdana, Geneva, sans-serif";
-var timeOnMessage=2; messageOk="Bien heccho!"; messageTime=""; messageError="Vuelve a intentarlo."; messageErrorG="Vuelve a intentarlo."; messageAttempts=""; isShowMessage=false;
+var timeOnMessage=2; messageOk="Bien hecho!"; messageTime=""; messageError="Vuelve a intentarlo."; messageErrorG="Vuelve a intentarlo."; messageAttempts=""; isShowMessage=false;
 var urlOk=""; urlTime=""; urlError=""; urlAttempts="";
 var goURLOk="_blank"; goURLTime="_blank"; goURLAttempts="_blank"; goURLError="_blank"; 
 borderOk="#008000"; borderTime="#FF0000";borderError="#FF0000"; borderAttempts="#FF0000";
