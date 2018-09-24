@@ -1,4 +1,3 @@
-
 //Creado con Ardora - www.webardora.net
 //bajo licencia Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
 //para otros usos contacte con el autor
@@ -6,12 +5,12 @@ function initAct(){
 calcMaxWidth();paintQuest();paintbGame();paintLetters();
 if (tiAval){parent.iniciaActividade()}if ((tiTime) && (tiButtonTime)){paintButtonTime();}
 }
-function paintQuest(){$("#pregunta").html("");
-if (audioW[indexG].localeCompare("")==0){$("#pregunta").html("<p>" + questionW[indexG] + "</p>");}else{
-$("#pregunta").html("<img id='playSound' class='imaLeft' src='AHORCADO_resources/media/' alt='Sound' align='left'>"+ "<p>" + questionW[indexG] + "</p>");
+function paintQuest(){$("#ardoraQuest").html("");
+if (audioW[indexG].localeCompare("")==0){$("#ardoraQuest").html("<p>" + questionW[indexG] + "</p>");}else{
+$("#ardoraQuest").html("<img id='playSound' class='imaLeft' src='AHORCADO_resources/media/' alt='Sound' align='left'>"+ "<p>" + questionW[indexG] + "</p>");
 $("#playSound").bind("click", function (e) {var au="audio"+audioW[indexG];document.getElementById(au).play();});}
-profG=parseInt($("#pregunta").css("height").replace("px", ""));
-$("#img").html("");if (imageW[indexG].localeCompare("")!=0){$("#img").html("<img src='"+dirMedia+imageW[indexG]+"'/>");}
+profG=parseInt($("#ardoraQuest").css("height").replace("px", ""));
+$("#ardoraImage").html("");if (imageW[indexG].localeCompare("")!=0){$("#ardoraImage").html("<img src='"+dirMedia+imageW[indexG]+"'/>");}
 profG=profG+50;
 }
 function randomSort(){
@@ -20,9 +19,9 @@ for (i = 0; i < iW.length; i++) {var ind = Math.floor(Math.random()*iW.length);w
 ind++;if (ind==iW.length){ind=0;}}wordsG[ind]=iW[i];imageW[ind]=imaW[i];questionW[ind]=queW[i];audioW[ind]=auW[i];}
 }
 function calcMaxWidth(){for (i = 0; i < wordsG.length; i++) {var actualSize=0;actualSize=$.trim(aforWords(wordsG[i])).length*(48+9);
-if (actualSize>actMaxWidth){actMaxWidth=actualSize}}$("#actividad3").css("width",actMaxWidth+20+"px");
-var canWidth=$("#actividad3").css("width").replace("px","");
-var canHeight=$("#actividad3").css("height").replace("px","");$("#activiCanvas").attr({"width": (parseInt(canWidth)+20).toString(),"height": canHeight});}
+if (actualSize>actMaxWidth){actMaxWidth=actualSize}}$("#ardoraAct").css("width",actMaxWidth+20+"px");
+var canWidth=$("#ardoraAct").css("width").replace("px","");
+var canHeight=$("#ardoraAct").css("height").replace("px","");$("#ardoraActCanvas").attr({"width": (parseInt(canWidth)+20).toString(),"height": canHeight});}
 function checkLetter(cel){var sizeW=0;var correctL=false;for (i=0; i<$.trim(aforWords(wordsG[indexG])).length; i++) {if (fillLetter.indexOf(aforWords(wordsG[indexG]).substr(i,1))!=-1){sizeW++;}
 if (aforWords(wordsG[indexG]).substr(i,1).localeCompare(cel.text())==0){correctL=true;$("#cellG"+i.toString()).append("<p>"+aforWords(wordsG[indexG]).substr(i,1)+"</p>");
 $("#cellG"+i.toString()+" p").css("opacity","0");
@@ -41,10 +40,10 @@ if (totalWord==wordsG.length){score = score+scoreInc;showMessage("Ok");}else{sco
 $(".bLetter").remove();$(".bGame").remove();
 $(".letterOk").remove();indexWord=0;indexG++;paintQuest();paintbGame();paintLetters();$(".bLetter").css("backgroundColor",colorButton);$(".bLetter").css("color",colorBack);}}}}
 function paintLetters(){profG=profG+72; var leV=0;var toV=profG;for (i = 0; i < fillLetter.length; i++) {
-$("#actividad3").append("<div id='let"+i.toString()+"' class='bLetter'><p>"+fillLetter[i]+"</p></div>");
+$("#ardoraAct").append("<div id='let"+i.toString()+"' class='bLetter'><p>"+fillLetter[i]+"</p></div>");
 $("#let"+i.toString()).css("left",leV.toString()+"px");$("#let"+i.toString()).css("top",toV.toString()+"px");
 leV=leV+45;if (leV+45>actMaxWidth){leV=0;toV=toV+45;}}
-var heiAct=(toV+45).toString()+"px";$("#actividad3").css("height",heiAct);
+var heiAct=(toV+45).toString()+"px";$("#ardoraAct").css("height",heiAct);
 $(".bLetter").bind("click", function (e){checkLetter($(this));});
 $(".bLetter").mouseenter(function (){$(this).css({background: colorSele,color:colorText,borderColor: colorButton});
 var color2 = colorSele;var color1 = colorBack;
@@ -59,7 +58,7 @@ calcMaxWidth();
 $(".bLetter").mouseleave(function () {$(this).css({background: colorButton,color: colorBack,borderColor: colorBack});});}
 function paintbGame(){profG=profG+36+9;var leV=(actMaxWidth-($.trim(aforWords(wordsG[indexG])).length-1)*(36+19))/2;
 var toV=profG;for (i = 0; i < $.trim(aforWords(wordsG[indexG])).length; i++) {
-if (fillLetter.indexOf(aforWords(wordsG[indexG]).substr(i,1))!=-1){$("#actividad3").append("<div id='cellG"+i.toString()+"' class='bGame'></div>");
+if (fillLetter.indexOf(aforWords(wordsG[indexG]).substr(i,1))!=-1){$("#ardoraAct").append("<div id='cellG"+i.toString()+"' class='bGame'></div>");
 $("#cellG"+i.toString()).css("left",leV.toString()+"px");$("#cellG"+i.toString()).css("top",toV.toString()+"px");}
 leV=leV+55;}}
 function isCorrect(){

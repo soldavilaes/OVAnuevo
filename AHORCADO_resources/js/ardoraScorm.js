@@ -6,19 +6,19 @@ if (api == null){}else{api.LMSInitialize(""); apiStatus=api.LMSGetValue("cmi.cor
 api.LMSSetValue("cmi.core.lesson_status", "failed");}else{if ((scoOk==0) && (scoWrong==0)){api.LMSSetValue("cmi.core.lesson_status", "failed");}
 else{if (apiStatus=="passed"){if (scoOk==0){api.LMSSetValue("cmi.core.lesson_status", "failed");}else{
 if (tiButtonTime){
-$("#activiCanvas").unbind("mousedown");var canvas = document.getElementById("activiCanvas");canvas.width = canvas.width;
+$("#ardoraActCanvas").unbind("mousedown");var canvas = document.getElementById("ardoraActCanvas");canvas.width = canvas.width;
 }
 showMessage("Ok");apiInput=1;}}
 if (apiStatus=="failed"){if (scoWrong==0){api.LMSSetValue("cmi.core.lesson_status", "failed");}else{
 if (tiButtonTime){
-$("#activiCanvas").unbind("mousedown");var canvas = document.getElementById("activiCanvas");canvas.width = canvas.width;
+$("#ardoraActCanvas").unbind("mousedown");var canvas = document.getElementById("ardoraActCanvas");canvas.width = canvas.width;
 }
 showMessage("scoMessage");apiInput=1;}}}}
-var aluName = api.LMSGetValue("cmi.core.student_name");document.getElementById("SCORMact").innerHTML="<p>"+aluName+"</p>";
-$("#SCORMact").click(function(){var widthAlum=$("#SCORMact").css("width");
-if (widthAlum=="250px"){$("#SCORMact").css("width","15px");document.getElementById("SCORMact").innerHTML="";}
-else{$("#SCORMact").css("width","250px");document.getElementById("SCORMact").innerHTML="<p>"+aluName+"</p>";}});
-document.getElementById("SCORMact").style["visibility"]="visible";}}
+var aluName = api.LMSGetValue("cmi.core.student_name");document.getElementById("ardoraAlumSCORM").innerHTML="<p>"+aluName+"</p>";
+$("#ardoraAlumSCORM").click(function(){var widthAlum=$("#ardoraAlumSCORM").css("width");
+if (widthAlum=="250px"){$("#ardoraAlumSCORM").css("width","15px");document.getElementById("ardoraAlumSCORM").innerHTML="";}
+else{$("#ardoraAlumSCORM").css("width","250px");document.getElementById("ardoraAlumSCORM").innerHTML="<p>"+aluName+"</p>";}});
+document.getElementById("ardoraAlumSCORM").style["visibility"]="visible";}}
 function unloadPage(){ if ((api != null) && (apiInput==0)) {var currentTime = new Date();var endTime = currentTime.getTime()
 var calculatedTime = endTime-startTime;var totalHours = Math.floor(calculatedTime/1000/60/60);calculatedTime = calculatedTime - totalHours*1000*60*60
 if ( totalHours < 1000 && totalHours > 99 ) {totalHours = "0"+totalHours;} else if ( totalHours < 100 && totalHours > 9 ) {totalHours = "00"+totalHours;
