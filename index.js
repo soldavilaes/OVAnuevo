@@ -48,8 +48,18 @@ $(document).ready(function(e){
   });
 });
 $(document).ready(function(e){
-  $('#itemActividad').on('click', function(){
-    $('#content').load('actividad.html')
+  $('#itemActividad1').on('click', function(){
+    $('#content').load('actividad1.html')
+  });
+});
+$(document).ready(function(e){
+  $('#itemActividad2').on('click', function(){
+    $('#content').load('actividad2.html')
+  });
+});
+$(document).ready(function(e){
+  $('#itemActividad3').on('click', function(){
+    $('#content').load('actividad3.html')
   });
 });
 $(document).ready(function(e){
